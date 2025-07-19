@@ -1,0 +1,109 @@
+{
+  "currentSeason": {
+    "season": "2023-24 中国青年联赛",
+    "gamesPlayed": 24,
+    "gamesStarted": 22,
+    "averages": {
+      "points": 18.5,
+      "rebounds": 12.3,
+      "assists": 2.8,
+      "blocks": 3.2,
+      "steals": 1.1,
+      "minutes": 28.7
+    },
+    "shooting": {
+      "fieldGoalPercentage": 0.612,
+      "threePointPercentage": 0.278,
+      "freeThrowPercentage": 0.735
+    }
+  },
+  "recentGames": [
+    {
+      "date": "2024-03-15",
+      "opponent": "vs 上海青年队",
+      "result": "W 95-82",
+      "stats": {
+        "points": 24,
+        "rebounds": 15,
+        "assists": 4,
+        "blocks": 5,
+        "minutes": 32
+      },
+      "highlights": "单场5个盖帽，统治内线"
+    },
+    {
+      "date": "2024-03-12",
+      "opponent": "vs 广东青年队",
+      "result": "W 88-76",
+      "stats": {
+        "points": 19,
+        "rebounds": 11,
+        "assists": 3,
+        "blocks": 2,
+        "minutes": 29
+      },
+      "highlights": "稳定的攻防两端表现"
+    },
+    {
+      "date": "2024-03-08",
+      "opponent": "vs 辽宁青年队",
+      "result": "L 78-85",
+      "stats": {
+        "points": 16,
+        "rebounds": 13,
+        "assists": 2,
+        "blocks": 4,
+        "minutes": 31
+      },
+      "highlights": "虽败犹荣的内线表现"
+    },
+    {
+      "date": "2024-03-05",
+      "opponent": "vs 山东青年队",
+      "result": "W 92-79",
+      "stats": {
+        "points": 22,
+        "rebounds": 14,
+        "assists": 5,
+        "blocks": 3,
+        "minutes": 30
+      },
+      "highlights": "全面的攻防数据"
+    },
+    {
+      "date": "2024-03-01",
+      "opponent": "vs 江苏青年队",
+      "result": "W 101-88",
+      "stats": {
+        "points": 26,
+        "rebounds": 16,
+        "assists": 3,
+        "blocks": 6,
+        "minutes": 33
+      },
+      "highlights": "赛季单场得分新高"
+    }
+  ],
+  "milestones": [
+    {
+      "date": "2021-08-15",
+      "achievement": "入选中国U16国青队",
+      "description": "首次入选国家青年队，代表中国参加国际比赛"
+    },
+    {
+      "date": "2022-07-20",
+      "achievement": "亚洲青年锦标赛最佳中锋",
+      "description": "在亚洲U18青年锦标赛中荣获最佳中锋奖项"
+    },
+    {
+      "date": "2023-12-10",
+      "achievement": "青年联赛单场30+15",
+      "description": "单场30分15篮板，创造个人最佳表现"
+    },
+    {
+      "date": "2024-01-25",
+      "achievement": "青年联赛MVP",
+      "description": "荣获2023-24赛季中国青年联赛最有价值球员"
+    }
+  ]
+}

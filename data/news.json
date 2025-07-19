@@ -1,0 +1,72 @@
+{
+  "featured": {
+    "id": 1,
+    "title": "杨瀚森荣获青年联赛MVP，NBA选秀前景看好",
+    "summary": "在刚刚结束的2023-24赛季中国青年联赛中，杨瀚森凭借出色的表现荣获最有价值球员奖项，场均贡献18.5分12.3篮板3.2盖帽。",
+    "content": "19岁的中国中锋杨瀚森在2023-24赛季中国青年联赛中表现出色，最终荣获最有价值球员奖项。这位身高7尺3寸的年轻球员在24场比赛中场均贡献18.5分12.3篮板3.2盖帽的全面数据。\n\n\"杨瀚森展现出了超越年龄的成熟度和篮球智商，\"青年联赛技术委员会主任在颁奖典礼上说道，\"他的身体条件和技术能力都非常出色，具备了冲击更高水平联赛的实力。\"\n\n多位NBA球探表示，杨瀚森的表现已经引起了他们的关注。他的身高优势、移动能力和篮球基本功都达到了职业水准。如果继续保持这样的发展轨迹，他很有希望在未来的NBA选秀中被选中。",
+    "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "date": "2024-04-15",
+    "category": "荣誉奖项",
+    "readTime": "3分钟",
+    "author": "中国篮球协会官网"
+  },
+  "articles": [
+    {
+      "id": 2,
+      "title": "专访：杨瀚森谈篮球梦想与NBA目标",
+      "summary": "从青年联赛到NBA梦想，杨瀚森分享了自己的成长历程和未来规划。",
+      "image": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "date": "2024-04-10",
+      "category": "专访",
+      "readTime": "5分钟",
+      "author": "腾讯体育"
+    },
+    {
+      "id": 3,
+      "title": "数据分析：杨瀚森的技术特点和发展潜力",
+      "summary": "通过详细的数据分析，我们来看看杨瀚森的技术特点和未来发展空间。",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "date": "2024-04-05",
+      "category": "数据分析",
+      "readTime": "4分钟",
+      "author": "篮球技术分析"
+    },
+    {
+      "id": 4,
+      "title": "青年联赛教练盛赞杨瀚森的职业态度",
+      "summary": "教练和队友们纷纷表示，杨瀚森的训练态度和学习能力给他们留下了深刻印象。",
+      "image": "https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "date": "2024-03-28",
+      "category": "球队动态",
+      "readTime": "3分钟",
+      "author": "青年联赛官网"
+    },
+    {
+      "id": 5,
+      "title": "杨瀚森单场30+15创个人纪录",
+      "summary": "30分15篮板的表现让杨瀚森成为青年联赛历史上最年轻的30+15球员。",
+      "image": "https://images.unsplash.com/photo-1552657140-4d5a2b8b8d4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "date": "2023-12-10",
+      "category": "里程碑",
+      "readTime": "2分钟",
+      "author": "体育周报"
+    },
+    {
+      "id": 6,
+      "title": "中国球迷为杨瀚森的出色表现感到骄傲",
+      "summary": "社交媒体上，中国球迷们纷纷为杨瀚森的出色表现点赞和支持。",
+      "image": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "date": "2024-03-20",
+      "category": "球迷反应",
+      "readTime": "3分钟",
+      "author": "新浪体育"
+    }
+  ],
+  "trending": [
+    "杨瀚森青年联赛MVP",
+    "NBA选秀前景分析",
+    "中国篮球新星崛起",
+    "青年联赛历史纪录",
+    "篮球训练技术分析"
+  ]
+}

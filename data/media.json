@@ -1,0 +1,118 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "杨瀚森青年联赛精彩集锦",
+      "description": "杨瀚森在2023-24赛季青年联赛中的精彩表现合集，展现了出色的内线统治力。",
+      "thumbnail": "https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "duration": "4:32",
+      "date": "2024-04-01",
+      "views": "89K",
+      "category": "highlights"
+    },
+    {
+      "id": 2,
+      "title": "单场30分15篮板历史表现",
+      "description": "杨瀚森创造个人纪录的比赛完整回放，30分15篮板的统治级表现。",
+      "thumbnail": "https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "duration": "3:45",
+      "date": "2023-12-10",
+      "views": "156K",
+      "category": "highlights"
+    },
+    {
+      "id": 3,
+      "title": "训练日常 - 投篮技巧提升",
+      "description": "跟随杨瀚森的日常训练，看看他是如何提升投篮技巧和内线脚步的。",
+      "thumbnail": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "duration": "6:18",
+      "date": "2024-03-15",
+      "views": "67K",
+      "category": "training"
+    },
+    {
+      "id": 4,
+      "title": "专访：从青年联赛到NBA梦想",
+      "description": "杨瀚森分享自己的篮球成长经历和对未来NBA生涯的期待。",
+      "thumbnail": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "duration": "12:25",
+      "date": "2024-04-10",
+      "views": "234K",
+      "category": "interview"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "title": "青年联赛MVP颁奖典礼",
+      "url": "https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "category": "award",
+      "date": "2024-04-15"
+    },
+    {
+      "id": 2,
+      "title": "训练中的专注神情",
+      "url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "category": "training",
+      "date": "2024-03-20"
+    },
+    {
+      "id": 3,
+      "title": "与队友的默契配合",
+      "url": "https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "category": "team",
+      "date": "2024-03-10"
+    },
+    {
+      "id": 4,
+      "title": "比赛前的热身准备",
+      "url": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "category": "game",
+      "date": "2024-03-05"
+    },
+    {
+      "id": 5,
+      "title": "庆祝胜利的喜悦时刻",
+      "url": "https://images.unsplash.com/photo-1552657140-4d5a2b8b8d4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "category": "celebration",
+      "date": "2024-02-28"
+    },
+    {
+      "id": 6,
+      "title": "个人写真照片",
+      "url": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "category": "portrait",
+      "date": "2024-01-15"
+    }
+  ],
+  "wallpapers": [
+    {
+      "id": 1,
+      "title": "青年联赛MVP纪念版",
+      "preview": "https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "sizes": ["1920x1080", "2560x1440", "3840x2160"],
+      "downloads": 3240
+    },
+    {
+      "id": 2,
+      "title": "训练场上的专注",
+      "preview": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "sizes": ["1920x1080", "2560x1440", "3840x2160"],
+      "downloads": 2876
+    },
+    {
+      "id": 3,
+      "title": "比赛精彩瞬间",
+      "preview": "https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "sizes": ["1920x1080", "2560x1440", "3840x2160"],
+      "downloads": 4102
+    },
+    {
+      "id": 4,
+      "title": "手机专用竖版",
+      "preview": "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "sizes": ["1080x1920", "1440x2560"],
+      "downloads": 5567
+    }
+  ]
+}
