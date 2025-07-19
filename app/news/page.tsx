@@ -29,60 +29,50 @@ export default function NewsPage() {
           {/* Main Content */}
           <div className="lg:col-span-2">
             {/* Featured Article */}
-            <article className="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
-              <div className="relative h-64 md:h-80">
-                <Image
-                  src={featured.image}
-                  alt={featured.title}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <span className="bg-blazers-red text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    头条新闻
-                  </span>
-                </div>
-              </div>
-              <div className="p-8">
-                <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
-                  <span className="bg-gray-100 px-3 py-1 rounded-full">{featured.category}</span>
-                  <div className="flex items-center space-x-1">
-                    <Calendar className="w-4 h-4" />
-                    <span>{formatDate(featured.date)}</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <Clock className="w-4 h-4" />
-                    <span>{featured.readTime}</span>
+            <Link href={`/news/${featured.slug || featured.id}`}>
+              <article className="bg-white rounded-lg shadow-lg overflow-hidden mb-12 cursor-pointer hover:shadow-xl transition-shadow">
+                <div className="relative h-64 md:h-80">
+                  <Image
+                    src={featured.image}
+                    alt={featured.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-blazers-red text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      头条新闻
+                    </span>
                   </div>
                 </div>
-                <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                  {featured.title}
-                </h1>
-                <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                  {featured.summary}
-                </p>
-                <div className="prose prose-lg max-w-none text-gray-700 mb-8">
-                  {featured.content.split('\\n\\n').map((paragraph, index) => (
-                    <p key={index} className="mb-4">
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-                <div className="flex items-center justify-between pt-6 border-t">
-                  <div className="text-sm text-gray-500">
-                    来源: {featured.author}
+                <div className="p-8">
+                  <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
+                    <span className="bg-gray-100 px-3 py-1 rounded-full">{featured.category}</span>
+                    <div className="flex items-center space-x-1">
+                      <Calendar className="w-4 h-4" />
+                      <span>{formatDate(featured.date)}</span>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      <Clock className="w-4 h-4" />
+                      <span>{featured.readTime}</span>
+                    </div>
                   </div>
-                  <div className="flex space-x-3">
-                    <Button variant="outline" size="sm">
-                      分享
-                    </Button>
-                    <Button variant="blazers" size="sm">
-                      收藏
-                    </Button>
+                  <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 hover:text-blazers-red transition-colors">
+                    {featured.title}
+                  </h1>
+                  <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                    {featured.summary}
+                  </p>
+                  <div className="flex items-center justify-between pt-6 border-t">
+                    <div className="text-sm text-gray-500">
+                      来源: {featured.author}
+                    </div>
+                    <div className="text-blazers-red font-medium">
+                      点击查看详情 →
+                    </div>
                   </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Link>
 
             {/* Other Articles */}
             <div className="space-y-8">
@@ -90,48 +80,49 @@ export default function NewsPage() {
                 更多新闻 <span className="text-blazers-red">More News</span>
               </h2>
               {articles.map((article) => (
-                <article key={article.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-                  <div className="md:flex">
-                    <div className="md:w-1/3">
-                      <div className="relative h-48 md:h-full">
-                        <Image
-                          src={article.image}
-                          alt={article.title}
-                          fill
-                          className="object-cover"
-                        />
+                <Link key={article.id} href={`/news/${article.slug || article.id}`}>
+                  <article className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden cursor-pointer">
+                    <div className="md:flex">
+                      <div className="md:w-1/3">
+                        <div className="relative h-48 md:h-full">
+                          <Image
+                            src={article.image}
+                            alt={article.title}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="md:w-2/3 p-6">
+                        <div className="flex items-center space-x-4 text-sm text-gray-500 mb-3">
+                          <span className="bg-gray-100 px-3 py-1 rounded-full">{article.category}</span>
+                          <div className="flex items-center space-x-1">
+                            <Calendar className="w-4 h-4" />
+                            <span>{formatDate(article.date)}</span>
+                          </div>
+                          <div className="flex items-center space-x-1">
+                            <Clock className="w-4 h-4" />
+                            <span>{article.readTime}</span>
+                          </div>
+                        </div>
+                        <h3 className="text-xl font-bold text-gray-800 mb-3 hover:text-blazers-red transition-colors">
+                          {article.title}
+                        </h3>
+                        <p className="text-gray-600 leading-relaxed mb-4">
+                          {article.summary}
+                        </p>
+                        <div className="flex items-center justify-between">
+                          <div className="text-sm text-gray-500">
+                            来源: {article.author}
+                          </div>
+                          <div className="text-blazers-red font-medium">
+                            阅读全文 →
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div className="md:w-2/3 p-6">
-                      <div className="flex items-center space-x-4 text-sm text-gray-500 mb-3">
-                        <span className="bg-gray-100 px-3 py-1 rounded-full">{article.category}</span>
-                        <div className="flex items-center space-x-1">
-                          <Calendar className="w-4 h-4" />
-                          <span>{formatDate(article.date)}</span>
-                        </div>
-                        <div className="flex items-center space-x-1">
-                          <Clock className="w-4 h-4" />
-                          <span>{article.readTime}</span>
-                        </div>
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-800 mb-3 hover:text-blazers-red transition-colors cursor-pointer">
-                        {article.title}
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed mb-4">
-                        {article.summary}
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <div className="text-sm text-gray-500">
-                          来源: {article.author}
-                        </div>
-                        <Button variant="outline" size="sm">
-                          阅读全文
-                          <ExternalLink className="w-4 h-4 ml-2" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                  </article>
+                </Link>
               ))}
             </div>
 

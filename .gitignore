@@ -1,33 +1,82 @@
 # Dependencies
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+tern-port
+.JS port file# Terndb/
 
-# Next.js
-.next/
-out/
 
-# Production build
-dist/
-build/
+.dynamol filesoDB Loca
+# Dynam
+ox/che
+.fusebseBox ca
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Fuerverlessories
+.s directlessServert
 
-# IDE
-.vscode/
-.idea/
+# /dis.vuepress output
+ilds bu
+
+# vueprestnuxutput
+.ld o nuxt.js bui
+
+#exttput
+.nbuild ou# next.js cache
+
+cel-cache
+.parg/)
+.ljs.or//parces:httphe (ler cac parcel-bund
+
+#ntegrity
+.yarn-iity filentegrYarn I
+*.tgz
+
+# ck''npm pa# Output of ry
+
+e_repl_histonodstory
+. REPL hialption
+
+# Oory
+.npmcache directal npm  Option/
+
+#pm_packagesectories
+jspendency dir# Derage/
+
+tanbul
+coveols like issed by toy uage director
+# Coverck
+.loseed
+*.pidd
+*.
+pids
+*.piuntime data
+# R.log
+
+*db
+
+# Logsmbs.Store
+Thu
+.DS_
+# OSwo
+*.s
 *.swp
-*.swo
+idea/scode/
+.
+# IDE
+.vlocal
+tion.
+.env.productest.locallocal
+.env.elopment.nv.dev.eal
+v
+.env.locles
+.ennt variabnme
+# Enviro
+build/
+ild
+dist/n buroductio
+# P
 
-# OS
-.DS_Store
-Thumbs.db
+out/.next/ Next.js
+*
 
-# Logs
-*.log
+#.logn-errorg*
+yarg.lobude
+yarn-g.log*bu-des/
+npmde_moduleno
