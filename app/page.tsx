@@ -169,13 +169,13 @@ export default function HomePage() {
               </div>
             </Link>
             
-            <Link href="/media" className="group">
+            <Link href="/videos" className="group">
               <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-105">
                 <div className="w-16 h-16 bg-blazers-red rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blazers-red/90 transition-colors">
                   <Play className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">媒体中心</h3>
-                <p className="text-gray-600 text-sm">观看精彩集锦和下载高清壁纸</p>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">视频</h3>
+                <p className="text-gray-600 text-sm">观看精彩比赛集锦和训练视频</p>
               </div>
             </Link>
             
@@ -206,7 +206,7 @@ export default function HomePage() {
               <Link href="/news">最新消息 Latest News</Link>
             </Button>
             <Button asChild variant="ghost" size="lg" className="text-white border-white border hover:bg-white hover:text-blazers-red">
-              <Link href="/media">观看集锦 Watch Highlights</Link>
+              <Link href="/videos">观看集锦 Watch Highlights</Link>
             </Button>
           </div>
         </div>

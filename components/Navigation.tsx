@@ -12,7 +12,7 @@ export function Navigation() {
     { href: '/', label: '首页', en: 'Home' },
     { href: '/about', label: '关于', en: 'About' },
     { href: '/stats', label: '数据', en: 'Stats' },
-    { href: '/media', label: '媒体', en: 'Media' },
+    { href: '/videos', label: '视频', en: 'Videos' },
     { href: '/news', label: '新闻', en: 'News' },
   ]
 
