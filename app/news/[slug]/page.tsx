@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Calendar, Clock, User, Share2, ExternalLink, Eye } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { formatDate } from '@/lib/utils'
+import NewsImageSimple from '@/components/NewsImageSimple'
 import newsData from '@/data/news.json'
 
 interface NewsDetailPageProps {
@@ -83,7 +83,7 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
         {/* 文章图片 */}
         <div className="mb-8">
           <div className="relative aspect-video rounded-lg overflow-hidden bg-gray-200">
-            <Image
+            <NewsImageSimple
               src={article.image}
               alt={article.title}
               fill
@@ -196,7 +196,7 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
                   className="flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors"
                 >
                   <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden bg-gray-200">
-                    <Image
+                    <NewsImageSimple
                       src={relatedArticle.image}
                       alt={relatedArticle.title}
                       fill

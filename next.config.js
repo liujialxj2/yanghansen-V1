@@ -2,27 +2,12 @@
 const nextConfig = {
   images: {
     domains: [
-      'images.unsplash.com', 
+      'images.unsplash.com',
       'via.placeholder.com',
-      'sportshub.cbsistatic.com',
-      'a.espncdn.com',
-      'cdn.nba.com',
-      'media.cnn.com',
-      'static01.nyt.com',
-      'www.si.com',
-      'cdn.vox-cdn.com',
-      'img.bleacherreport.net',
-      'pixabay.com',
-      'cdn.pixabay.com',
-      // Yang Hansen新闻图片域名
+      'library.sportingnews.com',
       'nbcsports.brightspotcdn.com',
-      'static.toiimg.com',
-      'nypost.com',
-      'cdn.cbssports.com',
-      'www.cbssports.com',
-      'pbs.twimg.com',
-      'img.youtube.com',
-      'nbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com'
+      'sportshub.cbsistatic.com',
+      'static.toiimg.com'
     ],
     unoptimized: false,
   },

@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Calendar, Clock, ExternalLink, TrendingUp } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { formatDate } from '@/lib/utils'
+import NewsImageSimple from '@/components/NewsImageSimple'
 import newsData from '@/data/news.json'
 import statsData from '@/data/stats.json'
 
@@ -32,7 +32,7 @@ export default function NewsPage() {
             <Link href={`/news/${featured.slug || featured.id}`}>
               <article className="bg-white rounded-lg shadow-lg overflow-hidden mb-12 cursor-pointer hover:shadow-xl transition-shadow">
                 <div className="relative h-64 md:h-80">
-                  <Image
+                  <NewsImageSimple
                     src={featured.image}
                     alt={featured.title}
                     fill
@@ -85,7 +85,7 @@ export default function NewsPage() {
                     <div className="md:flex">
                       <div className="md:w-1/3">
                         <div className="relative h-48 md:h-full">
-                          <Image
+                          <NewsImageSimple
                             src={article.image}
                             alt={article.title}
                             fill
