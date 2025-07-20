@@ -5,11 +5,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Play, Download, Eye, Calendar } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import VideoList from '@/components/VideoList'
+import VideoPlayer from '@/components/VideoPlayer'
 import mediaData from '@/data/media.json'
+import videosData from '@/data/videos.json'
 
 export default function MediaPage() {
   const [activeTab, setActiveTab] = useState('videos')
   const [selectedCategory, setSelectedCategory] = useState('all')
+  const [selectedVideo, setSelectedVideo] = useState(null)
+  const [showVideoPlayer, setShowVideoPlayer] = useState(false)
 
   const tabs = [
     { id: 'videos', label: '视频集锦', en: 'Videos' },
@@ -17,11 +22,15 @@ export default function MediaPage() {
     { id: 'wallpapers', label: '壁纸下载', en: 'Wallpapers' }
   ]
 
-  const videoCategories = [
+  const videoCategoryOptions = [
     { id: 'all', label: '全部' },
-    { id: 'highlights', label: '比赛集锦' },
-    { id: 'training', label: '训练日常' },
-    { id: 'interview', label: '采访专访' }
+    { id: 'highlights', label: '精彩集锦' },
+    { id: 'draft', label: 'NBA选秀' },
+    { id: 'summer_league', label: '夏季联赛' },
+    { id: 'interview', label: '采访内容' },
+    { id: 'training', label: '训练视频' },
+    { id: 'news', label: '新闻报道' },
+    { id: 'skills', label: '技能展示' }
   ]
 
   const photoCategories = [
@@ -34,13 +43,29 @@ export default function MediaPage() {
     { id: 'award', label: '颁奖典礼' }
   ]
 
+  // 使用真实的YouTube视频数据
+  const allVideos = videosData?.videos || []
+  const videoCategories = videosData?.categories || {}
+  
   const filteredVideos = selectedCategory === 'all' 
-    ? mediaData.videos 
-    : mediaData.videos.filter(video => video.category === selectedCategory)
+    ? allVideos
+    : (videoCategories[selectedCategory] || [])
 
   const filteredPhotos = selectedCategory === 'all' 
     ? mediaData.photos 
     : mediaData.photos.filter(photo => photo.category === selectedCategory)
+
+  // 处理视频选择
+  const handleVideoSelect = (video) => {
+    setSelectedVideo(video)
+    setShowVideoPlayer(true)
+  }
+
+  // 关闭视频播放器
+  const handleClosePlayer = () => {
+    setShowVideoPlayer(false)
+    setSelectedVideo(null)
+  }
 
   return (
     <div className="min-h-screen py-8">
@@ -83,69 +108,42 @@ export default function MediaPage() {
         </div>
       </section>
 
+      {/* Video Player Modal */}
+      {showVideoPlayer && selectedVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="flex justify-between items-center p-4 border-b">
+              <h2 className="text-lg font-semibold">视频播放</h2>
+              <button
+                onClick={handleClosePlayer}
+                className="text-gray-500 hover:text-gray-700 text-2xl"
+              >
+                ×
+              </button>
+            </div>
+            <div className="p-4">
+              <VideoPlayer video={selectedVideo} autoplay={true} />
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           {/* Videos Tab */}
           {activeTab === 'videos' && (
             <div>
-              {/* Category Filter */}
-              <div className="flex flex-wrap justify-center gap-3 mb-12">
-                {videoCategories.map((category) => (
-                  <button
-                    key={category.id}
-                    onClick={() => setSelectedCategory(category.id)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                      selectedCategory === category.id
-                        ? 'bg-blazers-red text-white'
-                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                    }`}
-                  >
-                    {category.label}
-                  </button>
-                ))}
-              </div>
 
-              {/* Videos Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredVideos.map((video) => (
-                  <Link key={video.id} href={`/media/video/${video.slug || video.id}`}>
-                    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                      <div className="relative group">
-                        <Image
-                          src={video.thumbnail}
-                          alt={video.title}
-                          width={400}
-                          height={225}
-                          className="w-full h-48 object-cover"
-                        />
-                        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                          <div className="w-16 h-16 bg-blazers-red rounded-full flex items-center justify-center">
-                            <Play className="w-8 h-8 text-white ml-1" />
-                          </div>
-                        </div>
-                        <div className="absolute bottom-2 right-2 bg-black bg-opacity-75 text-white px-2 py-1 rounded text-sm">
-                          {video.duration}
-                        </div>
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-lg font-semibold text-gray-800 mb-2 hover:text-blazers-red transition-colors">{video.title}</h3>
-                        <p className="text-gray-600 text-sm mb-4 line-clamp-2">{video.description}</p>
-                        <div className="flex items-center justify-between text-sm text-gray-500">
-                          <div className="flex items-center space-x-1">
-                            <Eye className="w-4 h-4" />
-                            <span>{video.views}</span>
-                          </div>
-                          <div className="flex items-center space-x-1">
-                            <Calendar className="w-4 h-4" />
-                            <span>{video.date}</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+
+              {/* 使用VideoList组件 */}
+              <VideoList 
+                videos={allVideos}
+                categories={videoCategories}
+                onVideoSelect={handleVideoSelect}
+                showFilters={true}
+                itemsPerPage={12}
+              />
             </div>
           )}
 
