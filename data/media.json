@@ -131,6 +131,34 @@
       "views": "267K",
       "category": "highlights",
       "slug": "yang-hansen-vs-top-players"
+    },
+    {
+      "id": "video-1752936228207-aeb9myqhz",
+      "title": "NBA Summer League Day 2: Yang Hansen is fun — and Las Vegas loves him",
+      "description": "Also on Day 2 of NBA Summer League, Reed Sheppard dominates. Again.",
+      "thumbnail": "https://nbcsports.brightspotcdn.com/dims4/default/ba3fdc4/2147483647/strip/true/crop/5421x3049+0+282/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F6d%2F39%2F9dbda69e4a98ac637140ebabe0be%2Fhttps-api-imagn.com%2Frest%2Fdownload%2FimageID%3D26533537",
+      "url": "https://www.nbcsports.com/nba/news/nba-summer-league-day-2-yang-hansen-is-fun-and-las-vegas-loves-him",
+      "duration": "N/A",
+      "publishedAt": "2025-07-12T11:36:58Z",
+      "views": "N/A",
+      "source": "NBCSports.com",
+      "category": "news",
+      "relevanceScore": 0.71,
+      "isNewsArticle": true
+    },
+    {
+      "id": "video-1752936228207-jcyzvruqk",
+      "title": "New video shows just how unexpected Blazers’ Yang Hansen NBA draft pick was",
+      "description": "Many didn't have the 7-foot-1 center being taken in the first round of the 2025 NBA Draft.",
+      "thumbnail": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-wsuo0wg54-1750947023088.jpg?quality=75&strip=all&1750934702&w=1024",
+      "url": "https://nypost.com/2025/06/26/sports/new-video-shows-just-how-unexpected-yang-hansen-nba-draft-pick-was/",
+      "duration": "N/A",
+      "publishedAt": "2025-06-26T15:47:12Z",
+      "views": "N/A",
+      "source": "New York Post",
+      "category": "news",
+      "relevanceScore": 0.7050000000000001,
+      "isNewsArticle": true
     }
   ],
   "photos": [
@@ -303,5 +331,6 @@
       "downloads": 5432,
       "description": "杨瀚森代表国家队出战的荣耀时刻"
     }
-  ]
+  ],
+  "lastUpdated": "2025-07-19T14:43:48.207Z"
 }

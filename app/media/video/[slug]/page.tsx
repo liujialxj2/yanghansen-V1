@@ -86,7 +86,7 @@ export default function VideoDetailPage({ params }: VideoDetailPageProps) {
                   </div>
                   <div className="flex items-center gap-1">
                     <Calendar className="w-4 h-4" />
-                    {formatDate(video.date)}
+                    {formatDate(video.date || video.publishedAt || '')}
                   </div>
                   <span className="bg-blazers-red text-white px-2 py-1 rounded text-xs font-medium">
                     {video.category}
@@ -208,7 +208,7 @@ export default function VideoDetailPage({ params }: VideoDetailPageProps) {
                         <div className="flex items-center gap-2 text-xs text-gray-500">
                           <span>{relatedVideo.views} 观看</span>
                           <span>•</span>
-                          <span>{formatDate(relatedVideo.date)}</span>
+                          <span>{formatDate(relatedVideo.date || relatedVideo.publishedAt || '')}</span>
                         </div>
                       </div>
                     </Link>

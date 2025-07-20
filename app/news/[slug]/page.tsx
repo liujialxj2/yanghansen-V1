@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowLeft, Calendar, Clock, User, Share2 } from 'lucide-react'
+import { ArrowLeft, Calendar, Clock, User, Share2, ExternalLink, Eye } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { formatDate } from '@/lib/utils'
 import newsData from '@/data/news.json'
@@ -93,6 +93,72 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
           </div>
         </div>
 
+        {/* 新闻摘要和内容片段 */}
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">新闻摘要</h2>
+          
+          {/* 描述 */}
+          {article.description && (
+            <div className="mb-4">
+              <p className="text-gray-700 leading-relaxed text-base">
+                {article.description}
+              </p>
+            </div>
+          )}
+          
+          {/* 内容片段 */}
+          {article.contentSnippet && article.contentSnippet !== article.description && (
+            <div className="mb-4">
+              <h3 className="text-sm font-medium text-gray-600 mb-2">内容预览</h3>
+              <div className="bg-gray-50 rounded-lg p-4">
+                <p className="text-gray-700 leading-relaxed">
+                  {article.contentSnippet}
+                </p>
+                {article.hasFullContent && (
+                  <p className="text-sm text-gray-500 mt-2 italic">
+                    ...更多内容请查看原文
+                  </p>
+                )}
+              </div>
+            </div>
+          )}
+          
+          {/* 阅读完整文章按钮 */}
+          <div className="border-t pt-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <Eye className="w-4 h-4" />
+                <span>来源: {article.originalSource || article.author}</span>
+              </div>
+              <Link 
+                href={article.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-blazers-red text-white px-6 py-3 rounded-lg hover:bg-blazers-red/90 transition-colors font-medium"
+              >
+                <ExternalLink className="w-4 h-4" />
+                阅读完整文章
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* 文章信息卡片 */}
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">
+          <div className="flex items-start gap-3">
+            <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+              <ExternalLink className="w-4 h-4 text-blue-600" />
+            </div>
+            <div>
+              <h3 className="font-medium text-blue-900 mb-1">关于这篇文章</h3>
+              <p className="text-sm text-blue-700 leading-relaxed">
+                这是来自 <strong>{article.originalSource || article.author}</strong> 的真实新闻报道。
+                上面显示的是新闻摘要和内容预览，点击"阅读完整文章"可以查看原网站的完整内容。
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* 分享按钮 */}
         <div className="flex items-center justify-between mb-8 p-4 bg-white rounded-lg shadow-sm">
           <div className="flex items-center gap-4">
@@ -114,16 +180,7 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
           </div>
         </div>
 
-        {/* 文章正文 */}
-        <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-          <div className="prose prose-lg max-w-none">
-            {article.content.split('\n\n').map((paragraph, index) => (
-              <p key={index} className="mb-6 text-gray-800 leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </div>
+
 
         {/* 相关文章 */}
         <div className="bg-white rounded-lg shadow-sm p-6">

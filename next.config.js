@@ -13,7 +13,16 @@ const nextConfig = {
       'cdn.vox-cdn.com',
       'img.bleacherreport.net',
       'pixabay.com',
-      'cdn.pixabay.com'
+      'cdn.pixabay.com',
+      // Yang Hansen新闻图片域名
+      'nbcsports.brightspotcdn.com',
+      'static.toiimg.com',
+      'nypost.com',
+      'cdn.cbssports.com',
+      'www.cbssports.com',
+      'pbs.twimg.com',
+      'img.youtube.com',
+      'nbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com'
     ],
     unoptimized: false,
   },
