@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Play, Download, Eye, Calendar } from 'lucide-react'
@@ -44,8 +44,22 @@ export default function MediaPage() {
   ]
 
   // 使用真实的YouTube视频数据
-  const allVideos = videosData?.videos || []
   const videoCategories = videosData?.categories || {}
+  
+  // 从所有分类中提取所有视频
+  const allVideos = useMemo(() => {
+    const videos = []
+    Object.values(videoCategories).forEach(categoryVideos => {
+      if (Array.isArray(categoryVideos)) {
+        videos.push(...categoryVideos)
+      }
+    })
+    // 去重（基于视频ID）
+    const uniqueVideos = videos.filter((video, index, self) => 
+      index === self.findIndex(v => v.id === video.id)
+    )
+    return uniqueVideos
+  }, [videoCategories])
   
   const filteredVideos = selectedCategory === 'all' 
     ? allVideos

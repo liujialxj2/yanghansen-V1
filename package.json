@@ -20,7 +20,8 @@
     "fix-images": "node scripts/update-image-domains.js",
     "fix-images-quick": "node scripts/fix-image-domains-quick.js",
     "test-website": "node scripts/test-website.js",
-    "preview-news": "node scripts/preview-news.js"
+    "preview-news": "node scripts/preview-news.js",
+    "test-media-fix": "node scripts/test-media-fix.js"
   },
   "dependencies": {
     "axios": "^1.6.0",
