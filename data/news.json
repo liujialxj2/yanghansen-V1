@@ -1,142 +1,539 @@
 {
-  "lastUpdated": "2025-07-20T12:13:52.904Z",
+  "lastUpdated": "2025-07-22T05:41:50.686Z",
+  "dataSource": "yang_hansen_specialized_search",
   "featured": {
-    "id": "yang-hansen-blazers-summer-league-2025",
-    "title": "杨瀚森开拓者夏季联赛首秀表现出色，中国7尺1寸中锋开启NBA征程",
-    "summary": "在波特兰开拓者队对阵金州勇士的NBA夏季联赛中，来自中国山东的7尺1寸中锋杨瀚森完成了自己的首次亮相，出战不到24分钟砍下10分4篮板5助攻3盖帽1抢断的全面数据。",
-    "content": "波特兰开拓者队的新秀杨瀚森在2025年7月12日对阵金州勇士的NBA夏季联赛中完成了自己的首秀，这标志着又一位中国球员踏上了NBA的舞台。\n\n作为一名身高7尺1寸的中锋，杨瀚森在2025年NBA选秀大会上被孟菲斯灰熊队在第一轮第16顺位选中，随后被交易至波特兰开拓者队。他的选中不仅实现了个人的NBA梦想，也为中国篮球增添了新的希望。\n\n在首次亮相中，杨瀚森展现了全面的篮球技能。出战不到24分钟，他贡献了10分、4篮板、5助攻、3盖帽和1抢断的全面数据，展现了作为现代中锋的多面性。\n\n杨瀚森的NBA之路始于他在CBA的出色表现。在2023-24 CBA赛季，他获得了CBA年度最佳新锐球员、年度最佳防守球员等多项荣誉，并入选CBA国内球员第一阵容。\n\n对于杨瀚森来说，这只是NBA征程的开始。作为中国篮球的新希望，他将继续努力，争取在NBA赛场上为中国篮球争光。",
-    "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
-    "date": "2025-07-20T12:13:52.904Z",
-    "category": "debut",
-    "readTime": "3分钟",
-    "author": "NBA官方",
-    "url": "#",
-    "slug": "yang-hansen-blazers-summer-league-2025",
+    "id": "featured-1753162910686",
+    "title": "“Hansen, put your suit on” - Yang Hansen recalls how his call as NBA Draft pick caught him off guard",
+    "summary": "Yang Hansen, the Portland Trail Blazers' pick, surprised everyone at the NBA draft. He was eating fried chicken when his name was announced. Hansen's Summer League performance earned him the nickname 'Chinese Jokic'. General Manager Jim Cronin expressed confi…",
+    "content": "10 auspicious fish to keep at home for luck, love, and wealth",
+    "image": "https://static.toiimg.com/thumb/msid-122640118,width-1070,height-580,imgsize-904394,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+    "date": "2025-07-17T11:38:16Z",
+    "category": "draft",
+    "readTime": "1分钟",
+    "author": "The Times of India",
+    "url": "https://timesofindia.indiatimes.com/sports/nba/top-stories/hansen-put-your-suit-on-yang-hansen-recalls-how-his-call-as-nba-draft-pick-caught-him-off-guard/articleshow/122639879.cms",
+    "slug": "hansen-put-your-suit-on---yang-hansen-recalls-how-",
     "tags": [
+      "杨瀚森",
       "Yang Hansen",
-      "Portland Trail Blazers",
-      "NBA Summer League",
-      "Chinese player"
-    ]
+      "NBA",
+      "选秀"
+    ],
+    "relevanceScore": 0.935,
+    "source": {
+      "name": "The Times of India",
+      "url": "https://timesofindia.indiatimes.com/sports/nba/top-stories/hansen-put-your-suit-on-yang-hansen-recalls-how-his-call-as-nba-draft-pick-caught-him-off-guard/articleshow/122639879.cms"
+    }
   },
   "articles": [
     {
-      "id": "yang-hansen-draft-journey-2025",
-      "title": "从山东淄博到波特兰：杨瀚森的NBA选秀之路",
-      "summary": "回顾杨瀚森从山东淄博到CBA再到NBA选秀的成长历程，以及他如何在2025年选秀中被第16顺位选中。",
-      "content": "详细介绍杨瀚森从青岛青训到CBA成功再到NBA选秀的完整历程...",
-      "image": "https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?w=800",
-      "date": "2025-07-19T12:13:52.904Z",
-      "category": "profile",
-      "readTime": "5分钟",
-      "author": "篮球记者",
-      "url": "#",
-      "slug": "yang-hansen-draft-journey-2025",
+      "id": "yang-hansen-1753162910685-1",
+      "title": "‘Chinese Jokic’ Yang Hansen selected at 16th pick in NBA draft, day before 20th birthday",
+      "summary": "Chinese basketball star Yang Hansen turned 20 on Thursday, but the best birthday gift he could ask for arrived a day earlier: putting on the NBA draft cap after being picked in the first round.",
+      "content": "Chinese basketball star Yang Hansen turned 20 on Thursday, but the best birthday gift he could ask for arrived a day earlier: putting on the NBA draft cap after being picked in the first round.\r\nMost… [+2301 chars]",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2222181955.jpg?c=16x9&q=w_800,c_fill",
+      "date": "2025-06-26T06:54:42Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "CNN",
+      "url": "https://www.cnn.com/2025/06/26/sport/yang-hansen-china-nba-blazers-intl-hnk",
+      "slug": "chinese-jokic-yang-hansen-selected-at-16th-pick-in",
       "tags": [
+        "杨瀚森",
         "Yang Hansen",
-        "NBA Draft 2025",
-        "CBA",
-        "China basketball"
-      ]
+        "NBA",
+        "选秀",
+        "中国约基奇",
+        "篮球"
+      ],
+      "relevanceScore": 0.915,
+      "source": {
+        "name": "CNN",
+        "url": "https://www.cnn.com/2025/06/26/sport/yang-hansen-china-nba-blazers-intl-hnk"
+      }
     },
     {
-      "id": "yang-hansen-cba-achievements-2024",
-      "title": "杨瀚森CBA赛季荣誉满载：年度最佳新锐球员等多项大奖",
-      "summary": "回顾杨瀚森在2023-24 CBA赛季的出色表现，获得年度最佳新锐球员、最佳防守球员等多项荣誉。",
-      "content": "杨瀚森在CBA首个赛季的出色表现和获得的荣誉...",
-      "image": "https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=800",
-      "date": "2025-07-18T12:13:52.904Z",
-      "category": "achievement",
-      "readTime": "4分钟",
-      "author": "CBA官方",
-      "url": "#",
-      "slug": "yang-hansen-cba-achievements-2024",
+      "id": "yang-hansen-1753162910685-2",
+      "title": "Trail Blazers explain Yang Hansen pick: Why Portland chose 'Chinese Jokić' in NBA Draft's biggest shocker",
+      "summary": "Yang was considered a second-round selection by most, but went No. 16 in the NBA Draft",
+      "content": "Surprising picks and stunning trades are through lines each year at the NBA Draft and part of what makes the event such a fascinating spectacle. But the Portland Trail Blazers on Wednesday during the… [+2934 chars]",
+      "image": "https://sportshub.cbsistatic.com/i/r/2025/06/26/dc11293f-c32d-4e1b-b063-7d6f1f05fc52/thumbnail/1200x675/17fe7e577bd15df19613299ff3c7b44a/usatsi-26533533-2.jpg",
+      "date": "2025-06-26T19:06:56Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "CBS Sports",
+      "url": "https://www.cbssports.com/nba/news/trail-blazers-explain-yang-hansen-pick-why-portland-chose-chinese-jokic-in-nba-drafts-biggest-shocker/",
+      "slug": "trail-blazers-explain-yang-hansen-pick-why-portlan",
       "tags": [
+        "杨瀚森",
         "Yang Hansen",
-        "CBA",
-        "青岛雄鹰",
-        "最佳新锐球员"
-      ]
+        "NBA",
+        "开拓者",
+        "选秀"
+      ],
+      "relevanceScore": 0.75,
+      "source": {
+        "name": "CBS Sports",
+        "url": "https://www.cbssports.com/nba/news/trail-blazers-explain-yang-hansen-pick-why-portland-chose-chinese-jokic-in-nba-drafts-biggest-shocker/"
+      }
     },
     {
-      "id": "yang-hansen-u19-world-cup-2023",
-      "title": "杨瀚森U19世界杯入选最佳二阵，场均12.6分10.4篮板",
-      "summary": "杨瀚森代表中国U19国家队参加2023年世界杯，凭借出色表现入选最佳二阵。",
-      "content": "杨瀚森在U19世界杯的表现和成就...",
-      "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
-      "date": "2025-07-17T12:13:52.904Z",
-      "category": "national_team",
-      "readTime": "3分钟",
-      "author": "国际篮联",
-      "url": "#",
-      "slug": "yang-hansen-u19-world-cup-2023",
+      "id": "yang-hansen-1753162910685-3",
+      "title": "Why Blazers' Yang Hansen, aka 'Chinese Jokić,' is already looking like the hidden gem of the 2025 NBA Draft",
+      "summary": "Yang has become a social media sensation after just two summer-league games",
+      "content": "Known as the \"Holy Grail of Shipwrecks,\" the Galleon San José was reportedly carrying 200 tons of gold, silver and emeralds -- worth a reported $20 billion -- when it sank in 1708. The first expediti… [+7681 chars]",
+      "image": "https://sportshub.cbsistatic.com/i/r/2025/07/14/0272fa23-bbfe-4670-bdac-d8052721ad24/thumbnail/1200x675/a355cef54b5f3527e5e964f1d04513bf/071325-yanghansen.jpg",
+      "date": "2025-07-14T14:51:20Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "CBS Sports",
+      "url": "https://www.cbssports.com/nba/news/why-blazers-yang-hansen-aka-chinese-jokic-is-already-looking-like-the-hidden-gem-of-the-2025-nba-draft/",
+      "slug": "why-blazers-yang-hansen-aka-chinese-joki-is-alread",
       "tags": [
+        "杨瀚森",
         "Yang Hansen",
-        "U19 World Cup",
-        "中国国家队",
-        "最佳二阵"
-      ]
+        "NBA",
+        "开拓者",
+        "选秀"
+      ],
+      "relevanceScore": 0.75,
+      "source": {
+        "name": "CBS Sports",
+        "url": "https://www.cbssports.com/nba/news/why-blazers-yang-hansen-aka-chinese-jokic-is-already-looking-like-the-hidden-gem-of-the-2025-nba-draft/"
+      }
     },
     {
-      "id": "blazers-rookie-expectations-2025",
-      "title": "开拓者队对新秀杨瀚森的期待与培养计划",
-      "summary": "波特兰开拓者队管理层和教练组谈论对杨瀚森的期待，以及球队的新秀培养计划。",
-      "content": "开拓者队对杨瀚森的培养计划和期待...",
-      "image": "https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?w=800",
-      "date": "2025-07-15T12:13:52.904Z",
+      "id": "yang-hansen-1753162910685-4",
+      "title": "Yang Hansen flashes potential in Blazers Summer League debut",
+      "summary": "How was Yang Hansen's Blazers debut?",
+      "content": "NBA first-round draft pick and Chinese prospect Yang Hansen played his first minutes in an NBA jersey Friday in Summer League action.\r\nAnd he flashed some of the potential that made him the No. 16 ov… [+1673 chars]",
+      "image": "https://library.sportingnews.com/styles/crop_style_16_9_desktop_webp/s3/2025-07/USATSI_26533534.jpg.webp?itok=oTHrYiUg",
+      "date": "2025-07-12T04:20:12Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "Sporting News",
+      "url": "https://www.sportingnews.com/us/nba/portland-trail-blazers/news/watch-yang-hansen-makes-blazers-summer-league-debut/5327742b0c9a434d0726dfd1",
+      "slug": "yang-hansen-flashes-potential-in-blazers-summer-le",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "开拓者",
+        "选秀",
+        "夏季联赛"
+      ],
+      "relevanceScore": 0.73,
+      "source": {
+        "name": "Sporting News",
+        "url": "https://www.sportingnews.com/us/nba/portland-trail-blazers/news/watch-yang-hansen-makes-blazers-summer-league-debut/5327742b0c9a434d0726dfd1"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-5",
+      "title": "NBA Summer League Day 2: Yang Hansen is fun — and Las Vegas loves him",
+      "summary": "Also on Day 2 of NBA Summer League, Reed Sheppard dominates. Again.",
+      "content": "LAS VEGAS Two courts, eight games, there is a lot to see the first weekend of the 2025 NBA Summer League Las Vegas. Here are just some of the highlights we saw.\r\nYang Hansen is fun\r\nThat went better … [+7729 chars]",
+      "image": "https://nbcsports.brightspotcdn.com/dims4/default/ba3fdc4/2147483647/strip/true/crop/5421x3049+0+282/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F6d%2F39%2F9dbda69e4a98ac637140ebabe0be%2Fhttps-api-imagn.com%2Frest%2Fdownload%2FimageID%3D26533537",
+      "date": "2025-07-12T11:36:58Z",
+      "category": "summer_league",
+      "readTime": "1分钟",
+      "author": "NBCSports.com",
+      "url": "https://www.nbcsports.com/nba/news/nba-summer-league-day-2-yang-hansen-is-fun-and-las-vegas-loves-him",
+      "slug": "nba-summer-league-day-2-yang-hansen-is-fun-and-las",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "夏季联赛"
+      ],
+      "relevanceScore": 0.71,
+      "source": {
+        "name": "NBCSports.com",
+        "url": "https://www.nbcsports.com/nba/news/nba-summer-league-day-2-yang-hansen-is-fun-and-las-vegas-loves-him"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-6",
+      "title": "New video shows just how unexpected Blazers’ Yang Hansen NBA draft pick was",
+      "summary": "Many didn't have the 7-foot-1 center being taken in the first round of the 2025 NBA Draft.",
+      "content": "Many didn’t have Qingdado center Yang Hansen being taken in the first round of the 2025 NBA Draft.\r\nEven the 7-foot-1 center appeared taken aback when his name was called as the No. 16 pick by the Gr… [+2870 chars]",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-wsuo0wg54-1750947023088.jpg?quality=75&strip=all&1750934702&w=1024",
+      "date": "2025-06-26T15:47:12Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "New York Post",
+      "url": "https://nypost.com/2025/06/26/sports/new-video-shows-just-how-unexpected-yang-hansen-nba-draft-pick-was/",
+      "slug": "new-video-shows-just-how-unexpected-blazers-yang-h",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "开拓者",
+        "选秀",
+        "中锋"
+      ],
+      "relevanceScore": 0.7050000000000001,
+      "source": {
+        "name": "New York Post",
+        "url": "https://nypost.com/2025/06/26/sports/new-video-shows-just-how-unexpected-yang-hansen-nba-draft-pick-was/"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-7",
+      "title": "Report: Grizzlies trade picks with Blazers to land Cedric Coward, then Portland shocks by picking Hansen Yang",
+      "summary": "After trading away Desmond Bane, the Grizzlies needed more size on the wing. Yang, a center from China, was projected in second round.",
+      "content": "The Trail Blazers provided the biggest shock of the night, confusing their fans in Portland but delighting a lot of fans in China.\r\nThe Memphis Grizzlies and Portland Trail Blazers agreed to a trade … [+2282 chars]",
+      "image": "https://nbcsports.brightspotcdn.com/dims4/default/123da64/2147483647/strip/true/crop/4938x2778+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fe6%2Fd4%2F60c5e74c4a2e9006039ff428eec4%2Fhttps-api-imagn.com%2Frest%2Fdownload%2FimageID%3D26531670",
+      "date": "2025-06-26T02:39:13Z",
       "category": "team",
-      "readTime": "4分钟",
-      "author": "开拓者队官方",
-      "url": "#",
-      "slug": "blazers-rookie-expectations-2025",
+      "readTime": "1分钟",
+      "author": "NBCSports.com",
+      "url": "https://www.nbcsports.com/nba/news/report-grizzlies-trade-picks-with-blazers-to-land-cedric-coward-then-portland-shocks-by-picking-hansen-yang",
+      "slug": "report-grizzlies-trade-picks-with-blazers-to-land-",
       "tags": [
-        "Portland Trail Blazers",
-        "rookie development",
-        "Yang Hansen"
-      ]
+        "杨瀚森",
+        "Yang Hansen",
+        "开拓者",
+        "中国"
+      ],
+      "relevanceScore": 0.6700000000000002,
+      "source": {
+        "name": "NBCSports.com",
+        "url": "https://www.nbcsports.com/nba/news/report-grizzlies-trade-picks-with-blazers-to-land-cedric-coward-then-portland-shocks-by-picking-hansen-yang"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-8",
+      "title": "NBA world completely stunned by Yang Hansen pick at No. 16: ‘What on earth is Portland doing?’",
+      "summary": "The 2025 NBA Draft had its first real stunner just past the midway point of Wednesday's proceedings.",
+      "content": "The 2025 NBA Draft had its first real stunner just past the midway point of Wednesday’s proceedings.\r\nAs part of a trade with the Grizzlies, the Trail Blazers landed Yang Hansen from China with the N… [+2130 chars]",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-n4ug6o44q-1750906236445.jpg?quality=75&strip=all&1750891867&w=1024",
+      "date": "2025-06-26T03:15:19Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "New York Post",
+      "url": "https://nypost.com/2025/06/25/sports/nba-world-completely-stunned-by-yang-hansen-pick-at-no-16/",
+      "slug": "nba-world-completely-stunned-by-yang-hansen-pick-a",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "开拓者",
+        "选秀",
+        "中国"
+      ],
+      "relevanceScore": 0.665,
+      "source": {
+        "name": "New York Post",
+        "url": "https://nypost.com/2025/06/25/sports/nba-world-completely-stunned-by-yang-hansen-pick-at-no-16/"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-9",
+      "title": "Blazers' Yang Hansen was eating fried chicken when drafted at No. 16, said going early 'was a big shock'",
+      "summary": "Yang, a versatile big man, has impressed with his play during summer league",
+      "content": "A lot of people were surprised when Yang Hansen was selected at No. 16 overall in the 2025 NBA Draft ... including Yang Hansen. \r\nThe center from China admitted he was not prepared to go on stage whe… [+1347 chars]",
+      "image": "https://sportshub.cbsistatic.com/i/r/2025/07/14/0272fa23-bbfe-4670-bdac-d8052721ad24/thumbnail/1200x675/a355cef54b5f3527e5e964f1d04513bf/071325-yanghansen.jpg",
+      "date": "2025-07-17T20:20:17Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "CBS Sports",
+      "url": "https://www.cbssports.com/nba/news/blazers-yang-hansen-was-eating-fried-chicken-when-drafted-at-no-16-said-going-early-was-a-big-shock/",
+      "slug": "blazers-yang-hansen-was-eating-fried-chicken-when-",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "开拓者",
+        "选秀",
+        "中锋",
+        "中国"
+      ],
+      "relevanceScore": 0.5900000000000001,
+      "source": {
+        "name": "CBS Sports",
+        "url": "https://www.cbssports.com/nba/news/blazers-yang-hansen-was-eating-fried-chicken-when-drafted-at-no-16-said-going-early-was-a-big-shock/"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-10",
+      "title": "Flagg, Bronny and Bailey: Top summer league players to watch for every NBA team",
+      "summary": "Who are the top names to watch at the NBA summer league in Las Vegas? We have you covered.",
+      "content": "Jul 10, 2025, 07:00 AM ET\r\nBoth the California Classic and Salt Lake City summer leagues have wrapped up, so it's time to focus on the main event of the offseason: NBA 2K26 Las Vegas Summer League.\r\n… [+18145 chars]",
+      "image": "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0708%2Fr1516462_1296x729_16%2D9.jpg",
+      "date": "2025-07-10T11:23:19Z",
+      "category": "summer_league",
+      "readTime": "1分钟",
+      "author": "ESPN",
+      "url": "https://www.espn.com/nba/story/_/id/45690165/2025-nba-summer-league-top-players-all-30-teams-cooper-flagg-bronny-james-ace-bailey",
+      "slug": "flagg-bronny-and-bailey-top-summer-league-players-",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "夏季联赛"
+      ],
+      "relevanceScore": 0.47000000000000003,
+      "source": {
+        "name": "ESPN",
+        "url": "https://www.espn.com/nba/story/_/id/45690165/2025-nba-summer-league-top-players-all-30-teams-cooper-flagg-bronny-james-ace-bailey"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-11",
+      "title": "The Blazers’ wild NBA Draft pick is already being called ‘Chinese Jokic’ by one team",
+      "summary": "The Trail Blazers shocked the NBA world with their No. 16 pick, but if one anonymous Nuggets employee is to be believed, they might go down as legends for doing so.",
+      "content": "Photo by Sarah Stier/Getty Images\r\n\n \n\n The Trail Blazers shocked the NBA world with their No. 16 pick, but if one anonymous Nuggets employee is to be believed, they might go down as legends for doin… [+2788 chars]",
+      "image": "https://cdn.vox-cdn.com/thumbor/v_dKK-LVL6_seu0nAtw-QGMCgow=/0x0:5654x2960/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/26038558/2222178650.jpg",
+      "date": "2025-06-26T02:49:26Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "SB Nation",
+      "url": "https://www.sbnation.com/nba/2025/6/25/24456100/2025-nba-draft-portland-trail-blazers-select-hansen-yang",
+      "slug": "the-blazers-wild-nba-draft-pick-is-already-being-c",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "开拓者",
+        "选秀",
+        "中国约基奇"
+      ],
+      "relevanceScore": 0.425,
+      "source": {
+        "name": "SB Nation",
+        "url": "https://www.sbnation.com/nba/2025/6/25/24456100/2025-nba-draft-portland-trail-blazers-select-hansen-yang"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-12",
+      "title": "2025 NBA summer league superlatives: Promising rookies, impact veterans",
+      "summary": "From Cooper Flagg to veteran players, Kevin Pelton hands out superlatives for 2025 NBA summer league.",
+      "content": "After a down year for the 2024 NBA rookie class, during which second-rounder Bronny James was the most anticipated draft pick to play in the NBA summer league in Las Vegas, the excitement was back ea… [+7600 chars]",
+      "image": "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0718%2Fr1520501_1296x729_16%2D9.jpg",
+      "date": "2025-07-18T12:10:26Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "ESPN",
+      "url": "https://www.espn.com/nba/story/_/id/45763820/2025-nba-summer-league-superlatives-cooper-flagg-dylan-harper",
+      "slug": "2025-nba-summer-league-superlatives-promising-rook",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "选秀",
+        "夏季联赛"
+      ],
+      "relevanceScore": 0.41,
+      "source": {
+        "name": "ESPN",
+        "url": "https://www.espn.com/nba/story/_/id/45763820/2025-nba-summer-league-superlatives-cooper-flagg-dylan-harper"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-13",
+      "title": "NBA free agency winners and losers: Where Houston, Atlanta -- and, yes, the Lakers -- check in",
+      "summary": "From big man depth to the New Orleans Pelicans, here are the early winners and losers of early NBA free agency.",
+      "content": "Three days into the start of official free agent negotiations, and a week after the draft, the NBA has witnessed its typical, seasonal whirlwind of activity. Nine-figure surprises! Intriguing trades!… [+18565 chars]",
+      "image": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0703%2Fr1514290_1296x729_16%2D9.jpg",
+      "date": "2025-07-03T13:20:10Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "ESPN",
+      "url": "https://www.espn.com/nba/story/_/id/45652105/2025-nba-free-agency-winners-losers-offseason",
+      "slug": "nba-free-agency-winners-and-losers-where-houston-a",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "选秀"
+      ],
+      "relevanceScore": 0.38999999999999996,
+      "source": {
+        "name": "ESPN",
+        "url": "https://www.espn.com/nba/story/_/id/45652105/2025-nba-free-agency-winners-losers-offseason"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-14",
+      "title": "More than just talent needed to produce NBA's next Asian basketball superstar: Yao Ming",
+      "summary": "\"We need more competition to help us to see the world,\" said former NBA star Yao Ming.",
+      "content": "While international basketball appears to have improved by leaps and bounds - the last seven NBA Most Valuable Player awards have been won by non-US players - Asian men's basketball has yet to make t… [+1514 chars]",
+      "image": "https://dam.mediacorp.sg/image/upload/s--RLM7k7Ut--/f_auto,q_auto/c_fill,g_auto,h_676,w_1200/v1/mediacorp/cna/image/2025/06/26/yao_ming.jpeg?itok=d1NEoekG",
+      "date": "2025-06-26T05:03:00Z",
+      "category": "general",
+      "readTime": "1分钟",
+      "author": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/yao-ming-china-nba-yang-hansen-asia-rising-stars-international-houston-rockets-5204351",
+      "slug": "more-than-just-talent-needed-to-produce-nbas-next-",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "篮球"
+      ],
+      "relevanceScore": 0.385,
+      "source": {
+        "name": "CNA",
+        "url": "https://www.channelnewsasia.com/sport/yao-ming-china-nba-yang-hansen-asia-rising-stars-international-houston-rockets-5204351"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-15",
+      "title": "OKC Thunder 2025 NBA Draft Preview",
+      "summary": "The Oklahoma City Thunder enter the morning of the 2025 NBA Draft with three selections.",
+      "content": "OKLAHOMA CITY, OKLAHOMA - JUNE 22: Oklahoma City Thunder fans cheer during the NBA Finals game 7 ... More between Indiana Pacers and at Paycom Center on June 22, 2025 in Oklahoma City, Oklahoma, Unit… [+5008 chars]",
+      "image": "https://imageio.forbes.com/specials-images/imageserve/685b99cce1bc25ec77b2bc45/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "date": "2025-06-25T11:30:14Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "Forbes",
+      "url": "https://www.forbes.com/sites/nicholascrain/2025/06/25/okc-thunder-2025-nba-draft-preview/",
+      "slug": "okc-thunder-2025-nba-draft-preview",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "选秀",
+        "中锋"
+      ],
+      "relevanceScore": 0.385,
+      "source": {
+        "name": "Forbes",
+        "url": "https://www.forbes.com/sites/nicholascrain/2025/06/25/okc-thunder-2025-nba-draft-preview/"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-16",
+      "title": "Nets, Rutgers among winners and losers from first round of 2025 NBA Draft",
+      "summary": "The first round of the 2025 NBA Draft is in the books. From steals to questionable picks and more, here are winners and losers.",
+      "content": "Thirty picks down, 29 more to go.\r\nThe first round of the 2025 NBA Draft concluded Wednesday, with the second round set for Thursday and 29 more picks to be made. The New York Knicks were docked a se… [+5123 chars]",
+      "image": "https://media.nbcsportsboston.com/2025/06/rsz_bailey-yang-getty-62525.jpg?quality=85&strip=all&resize=1200%2C675",
+      "date": "2025-06-25T23:59:37Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "Nbcsportsboston.com",
+      "url": "https://www.nbcsportsboston.com/nba/nba-draft-2025-winners-losers-first-round/716447/",
+      "slug": "nets-rutgers-among-winners-and-losers-from-first-r",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "选秀"
+      ],
+      "relevanceScore": 0.385,
+      "source": {
+        "name": "Nbcsportsboston.com",
+        "url": "https://www.nbcsportsboston.com/nba/nba-draft-2025-winners-losers-first-round/716447/"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-17",
+      "title": "Buzz: Hansen impresses, Wemby returns and storylines to watch",
+      "summary": "What are league insiders buzzing about at 2025 NBA summer league in Las Vegas?",
+      "content": "Jul 15, 2025, 07:00 AM ET\r\n2025 NBA summer league has been filled with exciting rookie debuts, young players looking to secure roster spots and plenty of chatter surrounding the upcoming season's big… [+12605 chars]",
+      "image": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0715%2Fr1519179_1296x729_16%2D9.jpg",
+      "date": "2025-07-15T11:35:08Z",
+      "category": "summer_league",
+      "readTime": "1分钟",
+      "author": "ESPN",
+      "url": "https://www.espn.com/nba/story/_/id/45742034/2025-nba-summer-league-buzz-intel-storylines-reaction-las-vegas",
+      "slug": "buzz-hansen-impresses-wemby-returns-and-storylines",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "夏季联赛"
+      ],
+      "relevanceScore": 0.37,
+      "source": {
+        "name": "ESPN",
+        "url": "https://www.espn.com/nba/story/_/id/45742034/2025-nba-summer-league-buzz-intel-storylines-reaction-las-vegas"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-18",
+      "title": "Deandre Ayton reportedly finalizing buyout with Trail Blazers, will become a free agent if he clears waivers",
+      "summary": "Portland center Deandre Ayton is finalizing a buyout with the Trail Blazers and will become a free agent.",
+      "content": "Portland center Deandre Ayton is finalizing a buyout with the Trail Blazers ESPN's Shams Charania reported Sunday.\r\nHe'll become a free agent on Wednesday if he clears waivers, according to multiple … [+1664 chars]",
+      "image": "https://s.yimg.com/ny/api/res/1.2/4xO3NFOPXL9rwPwfEAGByw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://s.yimg.com/os/creatr-uploaded-images/2025-06/0a4aa930-555d-11f0-b7d4-eee7dda0f476",
+      "date": "2025-06-30T02:42:07Z",
+      "category": "team",
+      "readTime": "1分钟",
+      "author": "Yahoo Entertainment",
+      "url": "https://sports.yahoo.com/nba/breaking-news/article/deandre-ayton-reportedly-finalizing-buyout-with-trail-blazers-will-become-a-free-agent-if-he-clears-waivers-024207226.html",
+      "slug": "deandre-ayton-reportedly-finalizing-buyout-with-tr",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "开拓者",
+        "中锋"
+      ],
+      "relevanceScore": 0.35,
+      "source": {
+        "name": "Yahoo Entertainment",
+        "url": "https://sports.yahoo.com/nba/breaking-news/article/deandre-ayton-reportedly-finalizing-buyout-with-trail-blazers-will-become-a-free-agent-if-he-clears-waivers-024207226.html"
+      }
+    },
+    {
+      "id": "yang-hansen-1753162910685-19",
+      "title": "Shams Charania Is Chasing the Future — the NBA’s and His Own",
+      "summary": "Shams Charania, ESPN Senior NBA Insider, talks draft takeaways, Cooper Flagg, Adrian Wojnarowski, and how Drake gets him through stressful times.",
+      "content": "Shams Charania’s debut as part of ESPN’s NBA Draft coverage last week doubled as a herculean exercise in restraint. In past years, he famously used X (formerly known as Twitter) to reveal team draft … [+10168 chars]",
+      "image": "https://www.rollingstone.com/wp-content/uploads/2025/06/shams-charania.jpg?w=1600&h=900&crop=1",
+      "date": "2025-06-29T17:46:15Z",
+      "category": "draft",
+      "readTime": "1分钟",
+      "author": "Rolling Stone",
+      "url": "http://www.rollingstone.com/culture/culture-features/shams-charania-nba-draft-interview-1235373597/",
+      "slug": "shams-charania-is-chasing-the-future-the-nbas-and-",
+      "tags": [
+        "杨瀚森",
+        "Yang Hansen",
+        "NBA",
+        "选秀"
+      ],
+      "relevanceScore": 0.345,
+      "source": {
+        "name": "Rolling Stone",
+        "url": "http://www.rollingstone.com/culture/culture-features/shams-charania-nba-draft-interview-1235373597/"
+      }
     }
   ],
   "trending": [
+    "杨瀚森",
     "Yang Hansen",
-    "波特兰开拓者",
-    "Portland Trail Blazers",
-    "NBA新秀",
-    "中国球员",
-    "7尺1寸中锋",
-    "2025选秀",
-    "夏季联赛",
-    "CBA最佳新锐",
-    "青岛雄鹰"
+    "NBA",
+    "选秀",
+    "开拓者"
   ],
   "statistics": {
-    "total": 5,
+    "total": 20,
     "categories": {
-      "debut": 1,
-      "profile": 1,
-      "achievement": 1,
-      "national_team": 1,
-      "team": 1
+      "draft": 14,
+      "summer_league": 3,
+      "team": 2,
+      "general": 1
     },
     "sources": [
-      "NBA官方",
-      "篮球记者",
-      "CBA官方",
-      "国际篮联",
-      "开拓者队官方"
+      "The Times of India",
+      "CNN",
+      "CBS Sports",
+      "Sporting News",
+      "NBCSports.com",
+      "New York Post",
+      "ESPN",
+      "SB Nation",
+      "CNA",
+      "Forbes",
+      "Nbcsportsboston.com",
+      "Yahoo Entertainment",
+      "Rolling Stone"
     ],
-    "averageRelevance": 0.98,
+    "averageRelevance": 0.56675,
     "timeRange": {
-      "oldest": "2025-07-15T12:13:52.904Z",
-      "newest": "2025-07-20T12:13:52.904Z"
+      "oldest": 1750851014000,
+      "newest": 1752840626000
     }
-  },
-  "dataSource": "wikipedia_verified",
-  "corrections": [
-    "球队：印第安纳步行者 → 波特兰开拓者",
-    "选秀信息：2024年第2轮第36顺位 → 2025年第1轮第16顺位",
-    "身高：7'3\" → 7'1\"",
-    "添加了真实的夏季联赛首秀数据",
-    "添加了CBA生涯成就",
-    "添加了国家队经历"
-  ]
+  }
 }
