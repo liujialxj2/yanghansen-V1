@@ -10,7 +10,7 @@ import { detectLocale } from '@/lib/locale'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://yang-hansen.vercel.app'),
+  metadataBase: new URL('https://yanghansen.blog'),
   title: 'Yang Hansen | NBA Portland Trail Blazers',
   description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star',
   keywords: 'Yang Hansen, NBA, Trail Blazers, Chinese Basketball, Center',
