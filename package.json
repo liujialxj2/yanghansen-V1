@@ -13,6 +13,7 @@
     "update-videos": "node scripts/update-video-data.js",
     "test-youtube": "node scripts/test-youtube-integration.js",
     "verify-data": "node scripts/verify-data.js",
+    "verify-ads": "node scripts/verify-ads-txt.js",
     "setup": "./scripts/setup-cron.sh",
     "daily-update": "node scripts/daily-news-update.js",
     "update-deploy": "./scripts/update-and-deploy.sh",
