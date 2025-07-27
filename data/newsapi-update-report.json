@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-07-22T05:10:58.131Z",
+  "success": true,
+  "dataSource": "NewsAPI",
+  "totalArticles": 10,
+  "featuredArticle": "From Cooper Flagg to Trae Young: Stars who have showed out at Peach Jam",
+  "categories": [
+    "general",
+    "trade"
+  ],
+  "sources": [
+    "Deseret News",
+    "Newsweek",
+    "ESPN",
+    "Sporting News",
+    "Boston Herald",
+    "Business Insider",
+    "Forbes"
+  ],
+  "averageRelevance": 0.645,
+  "apiUsage": {
+    "used": 5,
+    "limit": 1000,
+    "remaining": 995,
+    "resetTime": "Tue Jul 22 2025"
+  }
+}

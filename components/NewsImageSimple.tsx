@@ -11,7 +11,7 @@ interface NewsImageSimpleProps {
   height?: number
 }
 
-export function NewsImageSimple({ 
+export default function NewsImageSimple({ 
   src, 
   alt, 
   className = '',

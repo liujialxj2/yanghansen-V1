@@ -1,0 +1,149 @@
+{
+  "basicInfo": {
+    "name": "Yang Hansen",
+    "englishName": "Yang Hansen",
+    "position": "Center",
+    "height": "7'1\" (2.16m)",
+    "weight": "249 lbs (113kg)",
+    "age": 20,
+    "birthDate": "2005-06-26",
+    "birthPlace": "Zibo, Shandong Province, China",
+    "team": "Portland Trail Blazers",
+    "jerseyNumber": "TBD",
+    "experience": "NBA Rookie",
+    "draftInfo": {
+      "year": 2025,
+      "round": 1,
+      "pick": 16,
+      "originalTeam": "孟菲斯灰熊",
+      "currentTeam": "波特兰开拓者"
+    }
+  },
+  "biography": {
+    "story": "Yang Hansen is a young center from Zibo, Shandong, China, standing 7'1\". He was selected by the Memphis Grizzlies in the 2025 NBA Draft and then traded to the Portland Trail Blazers. He is a rising star in Chinese basketball who achieved his NBA dream through outstanding performance in the CBA.",
+    "background": "Yang Hansen was born in Zibo, Shandong Province, and started playing basketball at a young age. He entered club training in the third grade of elementary school and later attended Zibo Sports School. Around 2020, he joined the youth training system of Qingdao Guoxin Haitian Club.",
+    "journey": "Yang Hansen excelled in Qingdao Guoxin Haitian youth team, helping the team win U17 national championships for two consecutive years and earning individual honors. In 2023, he was promoted to the CBA first team and won multiple important honors in his first season, including CBA Rookie of the Year. In 2025, he successfully entered the NBA, starting a new chapter in his professional career."
+  },
+  "careerTimeline": [
+    {
+      "year": "2020",
+      "event": "加入青岛国信海天俱乐部青训体系",
+      "description": "在青岛国信海天俱乐部的邀请下，进入俱乐部的青训体系"
+    },
+    {
+      "year": "2021",
+      "event": "青岛国信海天青年队夺得U17全国冠军",
+      "description": "杨瀚森获评为最佳防守球员"
+    },
+    {
+      "year": "2022",
+      "event": "青岛国信海天青年队卫冕U17全国冠军",
+      "description": "杨瀚森获评为最有价值球员"
+    },
+    {
+      "year": "2023",
+      "event": "加入青岛雄鹰CBA一线队",
+      "description": "2023-24年CBA赛季，杨瀚森被提拔到青岛国信水产一线队打职业比赛"
+    },
+    {
+      "year": "2023-10",
+      "event": "CBA职业首秀",
+      "description": "2023年10月23日，在常规赛第一轮对阵北控的比赛中实现职业首秀"
+    },
+    {
+      "year": "2024",
+      "event": "CBA全明星赛北区首发",
+      "description": "在当赛季全明星赛中，杨瀚森获选北区全明星首发"
+    },
+    {
+      "year": "2024",
+      "event": "获得多项CBA荣誉",
+      "description": "CBA国内球员第一阵容、CBA年度最佳防守球员、CBA年度最佳新锐球员"
+    },
+    {
+      "year": "2025-06",
+      "event": "NBA选秀被孟菲斯灰熊选中",
+      "description": "2025年6月25日，在2025年NBA选秀中被孟菲斯灰熊第16顺位选中"
+    },
+    {
+      "year": "2025-06",
+      "event": "被交易至波特兰开拓者",
+      "description": "中选后被交易至波特兰开拓者队"
+    },
+    {
+      "year": "2025-07",
+      "event": "NBA夏季联赛首秀",
+      "description": "2025年7月12日在开拓者对阵金州勇士的NBA夏季联赛比赛上迎来球队首秀，出赛不到24分钟砍下10分、4篮板、5助攻、3盖帽与1抢断"
+    }
+  ],
+  "personalLife": {
+    "education": "Zibo Sports School",
+    "languages": [
+      "Chinese (Native)",
+      "English (Learning)"
+    ],
+    "hobbies": [
+      "Basketball Training",
+      "Music",
+      "Reading"
+    ],
+    "hometown": "Zibo, Shandong Province",
+    "motto": "Train hard, pursue excellence"
+  },
+  "nbaInfo": {
+    "draftInfo": {
+      "year": 2025,
+      "round": 1,
+      "pick": 16,
+      "originalTeam": "孟菲斯灰熊",
+      "currentTeam": "波特兰开拓者"
+    },
+    "currentTeam": "波特兰开拓者",
+    "rookieYear": 2025,
+    "contract": {
+      "type": "rookie_contract",
+      "status": "active"
+    }
+  },
+  "cbaCareer": {
+    "season": "2023-24 CBA赛季",
+    "team": "青岛雄鹰",
+    "achievements": [
+      "CBA国内球员第一阵容",
+      "CBA年度最佳防守球员",
+      "CBA年度最佳新锐球员",
+      "CBA全明星赛北区首发"
+    ],
+    "debut": "2023年10月23日对阵北控"
+  },
+  "nationalTeam": [
+    {
+      "year": "2021-2022",
+      "team": "中国U17青少年篮球联赛",
+      "achievement": "总冠军"
+    },
+    {
+      "year": "2023",
+      "team": "中国U19国家队",
+      "achievement": "2023年U19世界杯最佳二阵",
+      "stats": "场均数据12.6分、10.4个篮板、4.7次助攻和15次盖帽"
+    },
+    {
+      "year": "2024",
+      "team": "中国国家队",
+      "achievement": "2025年亚洲杯篮球赛预选赛对阵蒙古国队比赛中实现国家队首秀"
+    }
+  ],
+  "lastUpdated": "2025-07-20T12:13:52.893Z",
+  "dataSource": "wikipedia_verified",
+  "corrections": [
+    "出生日期：2005年5月20日 → 2005年6月26日",
+    "出生地：北京 → 山东省淄博市",
+    "身高：7'3\" → 7'1\"",
+    "体重：265磅 → 249磅",
+    "选秀年份：2024年 → 2025年",
+    "选秀顺位：第2轮第36顺位 → 第1轮第16顺位",
+    "球队：印第安纳步行者 → 波特兰开拓者",
+    "选秀球队：步行者直接选中 → 灰熊选中后交易至开拓者"
+  ]
+}

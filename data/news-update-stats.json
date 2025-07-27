@@ -1,0 +1,28 @@
+{
+  "updatedAt": "2025-07-19T14:43:48.210Z",
+  "articlesCount": 8,
+  "categories": [
+    "draft",
+    "performance"
+  ],
+  "sources": [
+    "The Times of India",
+    "CNN",
+    "CBS Sports",
+    "NBCSports.com",
+    "New York Post"
+  ],
+  "timeRange": {
+    "oldest": "2025-06-26T02:39:13Z",
+    "newest": "2025-07-17T20:20:17Z"
+  },
+  "averageRelevance": 0.755625,
+  "processing": {
+    "processedAt": "2025-07-19T14:43:48.198Z",
+    "searchStrategies": 6,
+    "totalFound": 19,
+    "relevantFound": 8,
+    "duplicatesRemoved": 0,
+    "finalCount": 8
+  }
+}
