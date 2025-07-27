@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-// 计算年龄
+// 计算 龄
 export function calculateAge(birthDate: string): number {
   const birth = new Date(birthDate);
   const today = new Date();
@@ -19,7 +19,7 @@ export function calculateAge(birthDate: string): number {
   return age;
 }
 
-// 格式化日期
+// 格式化期
 export function formatDate(dateString: string): string {
   const date = new Date(dateString);
   return date.toLocaleDateString('zh-CN', {
@@ -34,7 +34,7 @@ export function formatNumber(num: number): string {
   return num.toLocaleString();
 }
 
-// 获取比赛结果颜色
+// 获取比赛Result颜色
 export function getGameResultColor(result: string): string {
   switch (result.toLowerCase()) {
     case 'w':

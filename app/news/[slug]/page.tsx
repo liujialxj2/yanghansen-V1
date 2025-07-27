@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { formatDate } from '@/lib/utils'
 import NewsImageSimple from '@/components/NewsImageSimple'
 import newsData from '@/data/news.json'
+import { notFound } from 'next/navigation'
 
 interface NewsDetailPageProps {
   params: {
@@ -12,43 +13,30 @@ interface NewsDetailPageProps {
 }
 
 export default function NewsDetailPage({ params }: NewsDetailPageProps) {
-  // 查找对应的新闻文章
+  // 查找对应的{tNav("news")}文章
   const article = [...newsData.articles, newsData.featured].find(
     (item) => item.slug === params.slug || item.id.toString() === params.slug
   )
 
   if (!article) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">文章未找到</h1>
-          <p className="text-gray-600 mb-6">抱歉，您访问的文章不存在或已被删除。</p>
-          <Link href="/news">
-            <Button>
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              返回新闻列表
-            </Button>
-          </Link>
-        </div>
-      </div>
-    )
+    notFound()
   }
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* 导航栏 */}
+      {/* Navigation */}
       <div className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 py-4">
           <Link href="/news" className="inline-flex items-center text-blazers-red hover:text-blazers-red/80 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" />
-            返回新闻列表
+            Back to News
           </Link>
         </div>
       </div>
 
-      {/* 文章内容 */}
+      {/* Article Content */}
       <article className="container mx-auto px-4 py-8 max-w-4xl">
-        {/* 文章头部 */}
+        {/* Article Header */}
         <header className="mb-8">
           <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
             <span className="bg-blazers-red text-white px-2 py-1 rounded text-xs font-medium">
@@ -80,7 +68,7 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
           </p>
         </header>
 
-        {/* 文章图片 */}
+        {/* Article Image */}
         <div className="mb-8">
           <div className="relative aspect-video rounded-lg overflow-hidden bg-gray-200">
             <NewsImageSimple
@@ -93,42 +81,42 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
           </div>
         </div>
 
-        {/* 新闻摘要和内容片段 */}
+        {/* News Summary and Content */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">新闻摘要</h2>
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">News Summary</h2>
           
-          {/* 描述 */}
-          {article.description && (
+          {/* Description */}
+          {article.summary && (
             <div className="mb-4">
               <p className="text-gray-700 leading-relaxed text-base">
-                {article.description}
+                {article.summary}
               </p>
             </div>
           )}
           
-          {/* 内容片段 */}
-          {article.contentSnippet && article.contentSnippet !== article.description && (
+          {/* Content Fragment */}
+          {article.content && article.content !== article.summary && (
             <div className="mb-4">
-              <h3 className="text-sm font-medium text-gray-600 mb-2">内容预览</h3>
+              <h3 className="text-sm font-medium text-gray-600 mb-2">Content Preview</h3>
               <div className="bg-gray-50 rounded-lg p-4">
                 <p className="text-gray-700 leading-relaxed">
-                  {article.contentSnippet}
+                  {article.content.substring(0, 200)}...
                 </p>
-                {article.hasFullContent && (
+                {article.content.length > 200 && (
                   <p className="text-sm text-gray-500 mt-2 italic">
-                    ...更多内容请查看原文
+                    ...read more in the original article
                   </p>
                 )}
               </div>
             </div>
           )}
           
-          {/* 阅读完整文章按钮 */}
+          {/* Read Full Article Button */}
           <div className="border-t pt-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <Eye className="w-4 h-4" />
-                <span>来源: {article.originalSource || article.author}</span>
+                <span>Source: {article.source?.name || article.author}</span>
               </div>
               <Link 
                 href={article.url} 
@@ -137,44 +125,44 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
                 className="inline-flex items-center gap-2 bg-blazers-red text-white px-6 py-3 rounded-lg hover:bg-blazers-red/90 transition-colors font-medium"
               >
                 <ExternalLink className="w-4 h-4" />
-                阅读完整文章
+                Read Full Article
               </Link>
             </div>
           </div>
         </div>
 
-        {/* 文章信息卡片 */}
+        {/* Article Info Card */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">
           <div className="flex items-start gap-3">
             <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
               <ExternalLink className="w-4 h-4 text-blue-600" />
             </div>
             <div>
-              <h3 className="font-medium text-blue-900 mb-1">关于这篇文章</h3>
+              <h3 className="font-medium text-blue-900 mb-1">About This Article</h3>
               <p className="text-sm text-blue-700 leading-relaxed">
-                这是来自 <strong>{article.originalSource || article.author}</strong> 的真实新闻报道。
-                上面显示的是新闻摘要和内容预览，点击"阅读完整文章"可以查看原网站的完整内容。
+                This is a real news report from <strong>{article.source?.name || article.author}</strong>.
+                The content above is a summary and preview. Click "Read Full Article" to view the complete content on the original website.
               </p>
             </div>
           </div>
         </div>
 
-        {/* 分享按钮 */}
+        {/* Share Buttons */}
         <div className="flex items-center justify-between mb-8 p-4 bg-white rounded-lg shadow-sm">
           <div className="flex items-center gap-4">
-            <span className="text-sm font-medium text-gray-700">分享这篇文章：</span>
+            <span className="text-sm font-medium text-gray-700">Share this article:</span>
             <div className="flex gap-2">
               <Button variant="outline" size="sm">
                 <Share2 className="w-4 h-4 mr-1" />
-                微信
+                WeChat
               </Button>
               <Button variant="outline" size="sm">
                 <Share2 className="w-4 h-4 mr-1" />
-                微博
+                Weibo
               </Button>
               <Button variant="outline" size="sm">
                 <Share2 className="w-4 h-4 mr-1" />
-                复制链接
+                Copy Link
               </Button>
             </div>
           </div>
@@ -182,9 +170,9 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
 
 
 
-        {/* 相关文章 */}
+        {/* Related Articles */}
         <div className="bg-white rounded-lg shadow-sm p-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-4">相关文章</h3>
+          <h3 className="text-xl font-bold text-gray-900 mb-4">Related Articles</h3>
           <div className="grid md:grid-cols-2 gap-4">
             {newsData.articles
               .filter(item => item.id !== article.id)

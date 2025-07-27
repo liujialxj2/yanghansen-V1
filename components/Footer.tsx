@@ -1,6 +1,10 @@
+'use client'
+
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 export function Footer() {
+  const t = useTranslations('Footer')
   return (
     <footer className="bg-blazers-black text-white">
       <div className="container mx-auto px-4 py-8">
@@ -12,39 +16,37 @@ export function Footer() {
                 <span className="text-white font-bold text-lg">YH</span>
               </div>
               <div>
-                <div className="text-xl font-bold">杨瀚森</div>
-                <div className="text-sm text-gray-300">Yang Hansen</div>
+                <div className="text-xl font-bold">Yang Hansen</div>
+                <div className="text-sm text-gray-300">NBA Player</div>
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              中国篮球新星，NBA选秀前景球员。
-              <br />
-              Rising Chinese Basketball Star, NBA Draft Prospect.
+              {t('description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">快速链接</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('quickLinks')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
-                  个人档案
+                  {t('personalProfile')}
                 </Link>
               </li>
               <li>
                 <Link href="/stats" className="text-gray-300 hover:text-white transition-colors">
-                  数据统计
+                  {t('dataStats')}
                 </Link>
               </li>
               <li>
-                <Link href="/media" className="text-gray-300 hover:text-white transition-colors">
-                  媒体中心
+                <Link href="/videos" className="text-gray-300 hover:text-white transition-colors">
+                  {t('mediaCenter')}
                 </Link>
               </li>
               <li>
                 <Link href="/news" className="text-gray-300 hover:text-white transition-colors">
-                  最新动态
+                  {t('latestNews')}
                 </Link>
               </li>
             </ul>
@@ -52,13 +54,12 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">联系信息</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('contactInfo')}</h3>
             <div className="space-y-2 text-gray-300 text-sm">
-              <p>中国青年篮球联赛</p>
-              <p>北京，中国</p>
-              <p>Beijing, China</p>
+              <p>Chinese Basketball League</p>
+              <p>{t('location')}</p>
               <p className="mt-4">
-                <span className="text-white">身高:</span> 7'3" (2.21m)
+                <span className="text-white">{t('height')}:</span> 7'3" (2.21m)
               </p>
             </div>
           </div>
@@ -67,14 +68,14 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-300 text-sm">
-            © 2024 杨瀚森官方网站. All rights reserved.
+            © 2024 {t('copyright')}
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="text-gray-300 hover:text-white text-sm transition-colors">
-              隐私政策
+              {t('privacy')}
             </Link>
             <Link href="/terms" className="text-gray-300 hover:text-white text-sm transition-colors">
-              使用条款
+              {t('terms')}
             </Link>
           </div>
         </div>

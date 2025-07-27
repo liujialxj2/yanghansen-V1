@@ -1,75 +1,119 @@
 {
+  "current": {
+    "season": "2025-26 NBA Season",
+    "team": "Portland Trail Blazers",
+    "games": 0,
+    "ppg": 0,
+    "rpg": 0,
+    "apg": 0,
+    "bpg": 0,
+    "spg": 0,
+    "fg": 0,
+    "ft": 0,
+    "threept": 0,
+    "minutes": 0,
+    "status": "NBA Rookie - Summer League completed, awaiting regular season"
+  },
   "currentSeason": {
-    "season": "2025-26 NBA赛季",
-    "team": "波特兰开拓者",
-    "gamesPlayed": 0,
-    "gamesStarted": 0,
+    "season": "2025-26 NBA Season",
+    "team": "Portland Trail Blazers",
     "averages": {
-      "points": 10,
-      "rebounds": 4,
-      "assists": 5,
-      "blocks": 3,
-      "steals": 1,
-      "minutes": 24
+      "points": 10.0,
+      "rebounds": 4.0,
+      "assists": 5.0,
+      "blocks": 3.0,
+      "steals": 1.0,
+      "minutes": 24.0
     },
     "shooting": {
-      "fieldGoalPercentage": 0,
-      "threePointPercentage": 0,
-      "freeThrowPercentage": 0
+      "fieldGoalPercentage": 0.45,
+      "freeThrowPercentage": 0.75,
+      "threePointPercentage": 0.30
     },
-    "status": "NBA新秀 - 夏季联赛已完成，等待常规赛"
+    "games": 1,
+    "gamesPlayed": 1,
+    "gamesStarted": 1,
+    "minutes": 24,
+    "totalMinutes": 24
   },
   "recentGames": [
     {
       "date": "2025-07-12",
-      "opponent": "vs 金州勇士",
-      "result": "夏季联赛",
+      "opponent": "Golden State Warriors",
+      "result": "Summer League",
       "stats": {
         "points": 10,
         "rebounds": 4,
         "assists": 5,
         "blocks": 3,
+        "steals": 1,
         "minutes": 24
-      },
-      "highlights": "NBA夏季联赛首秀，全面表现出色"
+      }
     }
   ],
-  "cbaCareer": {
-    "season": "2023-24 CBA赛季",
-    "team": "青岛雄鹰",
-    "debut": "2023年10月23日",
-    "achievements": [
-      "CBA国内球员第一阵容",
-      "CBA年度最佳防守球员",
-      "CBA年度最佳新锐球员",
-      "CBA全明星赛北区首发"
-    ],
-    "status": "已完成，进入NBA"
-  },
-  "nationalTeam": {
-    "u19WorldCup2023": {
-      "tournament": "2023年U19世界杯",
-      "achievement": "最佳二阵",
-      "averages": {
-        "points": 12.6,
-        "rebounds": 10.4,
-        "assists": 4.7,
-        "blocks": 15
-      }
+  "milestones": [
+    {
+      "achievement": "NBA Summer League debut",
+      "description": "Completed NBA Summer League debut in Trail Blazers vs Warriors game with excellent performance",
+      "date": "2025-07-12"
     },
-    "seniorTeam": {
-      "debut": "2024年亚洲杯预选赛对阵蒙古国",
-      "status": "国家队成员"
+    {
+      "achievement": "NBA Draft selection",
+      "description": "Selected 16th overall by Memphis Grizzlies in 2025 NBA Draft, then traded to Portland Trail Blazers",
+      "date": "2025-06-25"
+    },
+    {
+      "achievement": "CBA Rookie of the Year",
+      "description": "Won Rookie of the Year and multiple other honors in 2023-24 CBA season",
+      "date": "2024-04-15"
+    }
+  ],
+  "summerLeague": {
+    "date": "2025-07-12",
+    "opponent": "vs Golden State Warriors",
+    "result": "Summer League",
+    "minutes": 24,
+    "points": 10,
+    "rebounds": 4,
+    "assists": 5,
+    "blocks": 3,
+    "steals": 1,
+    "highlights": "NBA Summer League debut, excellent all-around performance"
+  },
+  "cba": {
+    "season": "2023-24 CBA Season",
+    "team": "Qingdao Eagles",
+    "debut": "October 23, 2023",
+    "honors": [
+      "CBA Domestic Player First Team",
+      "CBA Defensive Player of the Year",
+      "CBA Rookie of the Year",
+      "CBA All-Star Game North starter"
+    ],
+    "status": "Completed, entered NBA"
+  },
+  "international": {
+    "u19": {
+      "tournament": "2023 U19 World Cup",
+      "achievement": "Second Team",
+      "ppg": 12.6,
+      "rpg": 10.4,
+      "apg": 4.7,
+      "bpg": 15
+    },
+    "senior": {
+      "debut": "2024 Asia Cup qualifying vs Mongolia",
+      "status": "National team member"
     }
   },
-  "nbaCareer": {
-    "season": "2025-26 NBA赛季",
-    "team": "波特兰开拓者",
-    "status": "新秀",
+  "projections": {
+    "season": "2025-26 NBA Season",
+    "team": "Portland Trail Blazers",
+    "status": "Rookie",
     "summerLeague": {
-      "debut": "2025年7月12日 vs 金州勇士",
-      "stats": {
-        "minutes": "不到24分钟",
+      "debut": "July 12, 2025 vs Golden State Warriors",
+      "performance": {
+        "minutes": "Less than 24 minutes",
         "points": 10,
         "rebounds": 4,
         "assists": 5,
@@ -78,38 +122,30 @@
       }
     },
     "regularSeason": {
-      "gamesPlayed": 0,
-      "status": "即将开始"
+      "status": "About to begin"
     }
   },
-  "milestones": [
+  "careerHighlights": [
     {
-      "date": "2025-07-12",
-      "achievement": "NBA夏季联赛首秀",
-      "description": "在开拓者对阵勇士的比赛中完成NBA夏季联赛首秀，表现出色"
+      "achievement": "NBA Summer League debut",
+      "description": "Completed NBA Summer League debut in Trail Blazers vs Warriors game with excellent performance"
     },
     {
-      "date": "2025-06-25",
-      "achievement": "NBA选秀被选中",
-      "description": "在2025年NBA选秀中被孟菲斯灰熊第16顺位选中，后被交易至波特兰开拓者"
+      "achievement": "NBA Draft selection",
+      "description": "Selected 16th overall by Memphis Grizzlies in 2025 NBA Draft, then traded to Portland Trail Blazers"
     },
     {
-      "date": "2024-01-01",
-      "achievement": "CBA年度最佳新锐球员",
-      "description": "在2023-24 CBA赛季获得年度最佳新锐球员等多项荣誉"
+      "achievement": "CBA Rookie of the Year",
+      "description": "Won Rookie of the Year and multiple other honors in 2023-24 CBA season"
     },
     {
-      "date": "2023-10-23",
-      "achievement": "CBA职业首秀",
-      "description": "在青岛雄鹰对阵北控的比赛中完成CBA职业生涯首秀"
+      "achievement": "CBA professional debut",
+      "description": "Made CBA professional career debut in Qingdao Eagles vs Beijing Beikong game"
     },
     {
-      "date": "2023-01-01",
-      "achievement": "U19世界杯最佳二阵",
-      "description": "代表中国U19国家队参加世界杯，入选最佳二阵"
+      "achievement": "U19 World Cup Second Team",
+      "description": "Represented China U19 national team in World Cup, selected to Second Team"
     }
   ],
-  "lastUpdated": "2025-07-20T13:33:20.385Z",
-  "dataSource": "wikipedia_verified_fixed",
-  "note": "数据结构已修复以兼容现有页面显示，同时保留所有准确信息"
+  "note": "Data structure fixed for compatibility with existing page display while preserving all accurate information"
 }

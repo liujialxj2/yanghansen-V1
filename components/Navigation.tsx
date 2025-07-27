@@ -4,16 +4,20 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useTranslations, useLocale } from 'next-intl'
+import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+  const t = useTranslations('Navigation')
+  const locale = useLocale()
 
   const navItems = [
-    { href: '/', label: '首页', en: 'Home' },
-    { href: '/about', label: '关于', en: 'About' },
-    { href: '/stats', label: '数据', en: 'Stats' },
-    { href: '/videos', label: '视频', en: 'Videos' },
-    { href: '/news', label: '新闻', en: 'News' },
+    { href: '/', key: 'home' },
+    { href: '/about', key: 'about' },
+    { href: '/stats', key: 'stats' },
+    { href: '/videos', key: 'videos' },
+    { href: '/news', key: 'news' },
   ]
 
   return (
@@ -26,7 +30,7 @@ export function Navigation() {
               <span className="text-white font-bold text-lg">YH</span>
             </div>
             <div className="hidden sm:block">
-              <div className="text-xl font-bold text-blazers-red">杨瀚森</div>
+              <div className="text-xl font-bold text-blazers-red">Yang Hansen</div>
               <div className="text-sm text-gray-600">Yang Hansen</div>
             </div>
           </Link>
@@ -39,22 +43,27 @@ export function Navigation() {
                 href={item.href}
                 className="text-gray-700 hover:text-blazers-red transition-colors duration-200 font-medium"
               >
-                <span className="block">{item.label}</span>
-                <span className="block text-xs text-gray-500">{item.en}</span>
+                <span className="block">{t(item.key)}</span>
               </Link>
             ))}
+            <LanguageSwitcher />
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
+          {/* Mobile menu button and language switcher */}
+          <div className="flex items-center space-x-2">
+            <div className="md:hidden">
+              <LanguageSwitcher />
+            </div>
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label="Toggle menu"
+              >
+                {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -69,8 +78,7 @@ export function Navigation() {
                   className="block px-3 py-2 text-gray-700 hover:text-blazers-red hover:bg-gray-50 rounded-md transition-colors duration-200"
                   onClick={() => setIsOpen(false)}
                 >
-                  <span className="font-medium">{item.label}</span>
-                  <span className="text-sm text-gray-500 ml-2">{item.en}</span>
+                  <span className="font-medium">{t(item.key)}</span>
                 </Link>
               ))}
             </div>

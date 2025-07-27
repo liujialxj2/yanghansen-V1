@@ -1,20 +1,31 @@
+'use client'
+
 import { TrendingUp, Target, Shield, Clock } from 'lucide-react'
 import statsData from '@/data/stats.json'
 import { formatNumber, formatDate, getGameResultColor } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
+import { useSafeData } from '@/hooks/useSafeData'
+import { ChineseDetector } from '@/components/ChineseDetector'
 
 export default function StatsPage() {
-  const { currentSeason, recentGames, milestones } = statsData
+  const t = useTranslations('StatsPage')
+  const tStats = useTranslations('Stats')
+  
+  // 使用安全{t("stats")}过滤
+  const safeStatsData = useSafeData(statsData)
+  const { currentSeason, recentGames, milestones } = safeStatsData
 
   return (
-    <div className="min-h-screen py-8">
+    <ChineseDetector>
+      <div className="min-h-screen py-8">
       {/* Header */}
       <section className="py-16 bg-gradient-to-r from-blazers-red to-blazers-black text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-            数据统计 <span className="block text-2xl font-normal text-gray-200 mt-2">Statistics</span>
+            {t('title')}
           </h1>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-            追踪杨瀚森在NBA赛场上的每一个精彩表现和数据记录
+{t('subtitle')}
           </p>
         </div>
       </section>
@@ -23,24 +34,24 @@ export default function StatsPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            {currentSeason.season} 赛季概览 <span className="text-blazers-red">Season Overview</span>
+{currentSeason.season} {tStats('seasonOverview')}
           </h2>
           
           {/* Games Played Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="text-4xl font-bold text-blazers-red mb-2">{currentSeason.gamesPlayed}</div>
-              <div className="text-gray-600">出场比赛 Games Played</div>
+              <div className="text-gray-600">{tStats('gamesPlayed')}</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="text-4xl font-bold text-blazers-red mb-2">{currentSeason.gamesStarted}</div>
-              <div className="text-gray-600">首发比赛 Games Started</div>
+              <div className="text-gray-600">{tStats('gamesStarted')}</div>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-md text-center">
               <div className="text-4xl font-bold text-blazers-red mb-2">
                 {formatNumber(currentSeason.averages.minutes)}
               </div>
-              <div className="text-gray-600">场均时间 Minutes/Game</div>
+              <div className="text-gray-600">{tStats('minutesPerGame')}</div>
             </div>
           </div>
 
@@ -53,7 +64,7 @@ export default function StatsPage() {
                   <div className="text-2xl font-bold text-blazers-red">
                     {formatNumber(currentSeason.averages.points)}
                   </div>
-                  <div className="text-sm text-gray-600">场均得分</div>
+                  <div className="text-sm text-gray-600">{tStats('ppg')}</div>
                 </div>
               </div>
               <div className="text-xs text-gray-500">Points Per Game</div>
@@ -66,7 +77,7 @@ export default function StatsPage() {
                   <div className="text-2xl font-bold text-blazers-red">
                     {formatNumber(currentSeason.averages.rebounds)}
                   </div>
-                  <div className="text-sm text-gray-600">场均篮板</div>
+                  <div className="text-sm text-gray-600">{tStats('rpg')}</div>
                 </div>
               </div>
               <div className="text-xs text-gray-500">Rebounds Per Game</div>
@@ -79,7 +90,7 @@ export default function StatsPage() {
                   <div className="text-2xl font-bold text-blazers-red">
                     {formatNumber(currentSeason.averages.blocks)}
                   </div>
-                  <div className="text-sm text-gray-600">场均盖帽</div>
+                  <div className="text-sm text-gray-600">{tStats('bpg')}</div>
                 </div>
               </div>
               <div className="text-xs text-gray-500">Blocks Per Game</div>
@@ -92,7 +103,7 @@ export default function StatsPage() {
                   <div className="text-2xl font-bold text-blazers-red">
                     {formatNumber(currentSeason.averages.assists)}
                   </div>
-                  <div className="text-sm text-gray-600">场均助攻</div>
+                  <div className="text-sm text-gray-600">{tStats('assistsPerGame')}</div>
                 </div>
               </div>
               <div className="text-xs text-gray-500">Assists Per Game</div>
@@ -102,7 +113,7 @@ export default function StatsPage() {
           {/* Shooting Stats */}
           <div className="bg-white rounded-lg p-8 shadow-md">
             <h3 className="text-2xl font-bold mb-6 text-gray-800 text-center">
-              投篮数据 <span className="text-blazers-red">Shooting Statistics</span>
+{tStats('shootingStats')}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
@@ -128,7 +139,7 @@ export default function StatsPage() {
                     </span>
                   </div>
                 </div>
-                <div className="text-gray-800 font-semibold">投篮命中率</div>
+                <div className="text-gray-800 font-semibold">{tStats('fgPercent')}</div>
                 <div className="text-sm text-gray-600">Field Goal %</div>
               </div>
 
@@ -155,7 +166,7 @@ export default function StatsPage() {
                     </span>
                   </div>
                 </div>
-                <div className="text-gray-800 font-semibold">三分命中率</div>
+                <div className="text-gray-800 font-semibold">3P%</div>
                 <div className="text-sm text-gray-600">3-Point %</div>
               </div>
 
@@ -182,7 +193,7 @@ export default function StatsPage() {
                     </span>
                   </div>
                 </div>
-                <div className="text-gray-800 font-semibold">罚球命中率</div>
+                <div className="text-gray-800 font-semibold">FT%</div>
                 <div className="text-sm text-gray-600">Free Throw %</div>
               </div>
             </div>
@@ -194,7 +205,7 @@ export default function StatsPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            最近比赛 <span className="text-blazers-red">Recent Games</span>
+{tStats('recentGames')}
           </h2>
           <div className="max-w-6xl mx-auto">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -202,14 +213,14 @@ export default function StatsPage() {
                 <table className="w-full">
                   <thead className="bg-blazers-red text-white">
                     <tr>
-                      <th className="px-6 py-4 text-left">日期</th>
-                      <th className="px-6 py-4 text-left">对手</th>
-                      <th className="px-6 py-4 text-center">结果</th>
-                      <th className="px-6 py-4 text-center">得分</th>
-                      <th className="px-6 py-4 text-center">篮板</th>
-                      <th className="px-6 py-4 text-center">助攻</th>
-                      <th className="px-6 py-4 text-center">盖帽</th>
-                      <th className="px-6 py-4 text-center">时间</th>
+                      <th className="px-6 py-4 text-left">Date</th>
+                      <th className="px-6 py-4 text-left">Opponent</th>
+                      <th className="px-6 py-4 text-center">Result</th>
+                      <th className="px-6 py-4 text-center">PTS</th>
+                      <th className="px-6 py-4 text-center">REB</th>
+                      <th className="px-6 py-4 text-center">AST</th>
+                      <th className="px-6 py-4 text-center">BLK</th>
+                      <th className="px-6 py-4 text-center">MIN</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -253,7 +264,7 @@ export default function StatsPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-            职业生涯里程碑 <span className="text-blazers-red">Career Milestones</span>
+{tStats('careerMilestones')}
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
@@ -285,27 +296,28 @@ export default function StatsPage() {
       <section className="py-16 bg-blazers-red text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">
-            表现亮点 <span className="text-gray-200">Performance Highlights</span>
+            Performance Highlights
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div>
               <div className="text-4xl font-bold mb-2">14</div>
-              <div className="text-lg text-gray-200">职业生涯单场最高得分</div>
+              <div className="text-lg text-gray-200">{tStats("careerHighPoints")}</div>
               <div className="text-sm text-gray-300">Career High Points</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">11</div>
-              <div className="text-lg text-gray-200">职业生涯单场最高篮板</div>
+              <div className="text-lg text-gray-200">{tStats("careerHighRebounds")}</div>
               <div className="text-sm text-gray-300">Career High Rebounds</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">4</div>
-              <div className="text-lg text-gray-200">职业生涯单场最高盖帽</div>
+              <div className="text-lg text-gray-200">{t("careerHighBlocks")}</div>
               <div className="text-sm text-gray-300">Career High Blocks</div>
             </div>
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </ChineseDetector>
   )
 }

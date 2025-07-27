@@ -3,26 +3,29 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Navigation } from '@/components/Navigation'
 import { Footer } from '@/components/Footer'
+import { LocaleProvider } from '@/components/LocaleProvider'
+import { ChineseDetector } from '@/components/ChineseDetector'
+import { detectLocale } from '@/lib/locale'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://yang-hansen.vercel.app'),
-  title: '杨瀚森 | Yang Hansen - NBA Portland Trail Blazers',
-  description: '杨瀚森官方网站 - 波特兰开拓者队中锋，中国NBA球员的新星',
-  keywords: '杨瀚森, Yang Hansen, NBA, 开拓者, Trail Blazers, 中国篮球, 中锋',
-  authors: [{ name: '杨瀚森官方团队' }],
+  title: 'Yang Hansen | NBA Portland Trail Blazers',
+  description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star',
+  keywords: 'Yang Hansen, NBA, Trail Blazers, Chinese Basketball, Center',
+  authors: [{ name: 'Yang Hansen Official Team' }],
   openGraph: {
-    title: '杨瀚森 | Yang Hansen - NBA Portland Trail Blazers',
-    description: '杨瀚森官方网站 - 波特兰开拓者队中锋，中国NBA球员的新星',
+    title: 'Yang Hansen | NBA Portland Trail Blazers',
+    description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star',
     type: 'website',
     locale: 'zh_CN',
     alternateLocale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: '杨瀚森 | Yang Hansen - NBA Portland Trail Blazers',
-    description: '杨瀚森官方网站 - 波特兰开拓者队中锋，中国NBA球员的新星',
+    title: 'Yang Hansen | NBA Portland Trail Blazers',
+    description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star',
   },
   robots: {
     index: true,
@@ -30,21 +33,31 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  // 服务端默认英文，客户端检测后切换
+  const locale = 'en'; // 改为默认英文
+  
+  // 加载翻译文件
+  const messages = (await import(`../messages/${locale}.json`)).default;
+
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen flex flex-col">
-          <Navigation />
-          <main className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <LocaleProvider messages={messages} locale="en">
+          <ChineseDetector>
+            <div className="min-h-screen flex flex-col">
+            <Navigation />
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </div>
+          </ChineseDetector>
+        </LocaleProvider>
       </body>
     </html>
   )
