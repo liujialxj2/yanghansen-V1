@@ -9,6 +9,8 @@ interface NewsImageSimpleProps {
   className?: string
   width?: number
   height?: number
+  fill?: boolean
+  priority?: boolean
 }
 
 export default function NewsImageSimple({ 
@@ -16,7 +18,9 @@ export default function NewsImageSimple({
   alt, 
   className = '',
   width = 400,
-  height = 200
+  height = 200,
+  fill = false,
+  priority = false
 }: NewsImageSimpleProps) {
   const [imageError, setImageError] = React.useState(false)
 
@@ -35,10 +39,10 @@ export default function NewsImageSimple({
     <Image
       src={src}
       alt={alt}
-      width={width}
-      height={height}
+      {...(fill ? { fill: true } : { width, height })}
       className={className}
       onError={() => setImageError(true)}
+      priority={priority}
       unoptimized
     />
   )
