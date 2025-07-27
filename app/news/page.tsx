@@ -10,6 +10,7 @@ import statsData from '@/data/stats.json'
 import { useTranslations } from 'next-intl'
 import { useSafeData } from '@/hooks/useSafeData'
 import { ChineseDetector } from '@/components/ChineseDetector'
+import { HeaderAd, SidebarAd, ArticleAd } from '@/components/AdSense'
 
 export default function NewsPage() {
   const t = useTranslations('NewsPage')
@@ -37,6 +38,9 @@ export default function NewsPage() {
       </section>
 
       <div className="container mx-auto px-4 py-16">
+        {/* Header Ad */}
+        <HeaderAd />
+        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content */}
           <div className="lg:col-span-2">
@@ -148,6 +152,8 @@ export default function NewsPage() {
 
           {/* Sidebar */}
           <div className="space-y-8">
+            {/* Sidebar Ad */}
+            <SidebarAd />
             {/* Trending Topics */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center space-x-2 mb-6">
