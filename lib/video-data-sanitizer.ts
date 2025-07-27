@@ -145,6 +145,11 @@ function sanitizeThumbnailUrl(url: string): string {
     return '/images/video-placeholder.svg';
   }
 
+  // Handle relative URLs (like placeholder images)
+  if (url.startsWith('/images/')) {
+    return url;
+  }
+
   try {
     const urlObj = new URL(url);
     
@@ -170,10 +175,10 @@ function sanitizeThumbnailUrl(url: string): string {
       return urlObj.toString();
     }
 
-    console.warn('Thumbnail URL from untrusted domain:', url);
+    console.warn('Thumbnail URL from untrusted domain:', url, 'using fallback');
     return '/images/video-placeholder.svg';
   } catch (error) {
-    console.warn('Invalid thumbnail URL:', url);
+    console.warn('Invalid thumbnail URL detected:', url, 'using fallback');
     return '/images/video-placeholder.svg';
   }
 }

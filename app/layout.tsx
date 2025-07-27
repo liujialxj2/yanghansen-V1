@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star',
   keywords: 'Yang Hansen, NBA, Trail Blazers, Chinese Basketball, Center',
   authors: [{ name: 'Yang Hansen Official Team' }],
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'Yang Hansen | NBA Portland Trail Blazers',
     description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star',
