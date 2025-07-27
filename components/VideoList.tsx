@@ -71,13 +71,15 @@ export default function VideoList({
     return () => clearTimeout(timer)
   }, [searchTerm])
 
-  // Debug info
-  console.log('VideoList Debug:', {
-    videosLength: videos?.length || 0,
-    categoriesKeys: categories ? Object.keys(categories) : [],
-    showFilters,
-    itemsPerPage
-  })
+  // Debug info (only in development)
+  if (process.env.NODE_ENV === 'development') {
+    console.log('VideoList Debug:', {
+      videosLength: videos?.length || 0,
+      categoriesKeys: categories ? Object.keys(categories) : [],
+      showFilters,
+      itemsPerPage
+    })
+  }
 
   // Filter and sort videos
   const filteredAndSortedVideos = useMemo(() => {

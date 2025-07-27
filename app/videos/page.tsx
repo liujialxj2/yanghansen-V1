@@ -61,7 +61,10 @@ export default function VideosPage() {
         format: 'short'
       })
   
-  console.log('Videos page - total videos:', sanitizedVideos.length)
+  // Debug info (only in development)
+  if (process.env.NODE_ENV === 'development') {
+    console.log('Videos page - total videos:', sanitizedVideos.length)
+  }
 
   return (
     <ChineseDetector>

@@ -175,10 +175,13 @@ function sanitizeThumbnailUrl(url: string): string {
       return urlObj.toString();
     }
 
-    console.warn('Thumbnail URL from untrusted domain:', url, 'using fallback');
+    // Silently use fallback for untrusted domains
     return '/images/video-placeholder.svg';
   } catch (error) {
-    console.warn('Invalid thumbnail URL detected:', url, 'using fallback');
+    // Only log if it's not a common placeholder path
+    if (!url.includes('placeholder')) {
+      console.warn('Invalid thumbnail URL detected:', url, 'using fallback');
+    }
     return '/images/video-placeholder.svg';
   }
 }

@@ -78,8 +78,23 @@ export function SafeImage({
     onLoad?.();
   }, [onLoad]);
 
-  // Validate URL format
+  // Validate URL format - allow relative paths and API routes
   const isValidUrl = useCallback((url: string): boolean => {
+    if (!url || typeof url !== 'string') {
+      return false;
+    }
+    
+    // Allow relative paths (starting with /)
+    if (url.startsWith('/')) {
+      return true;
+    }
+    
+    // Allow data URLs
+    if (url.startsWith('data:')) {
+      return true;
+    }
+    
+    // Validate absolute URLs
     try {
       new URL(url);
       return true;
@@ -103,6 +118,12 @@ export function SafeImage({
       console.warn(`Invalid URL detected: ${imgSrc}, using fallback`);
       return fallbackSrc;
     }
+    
+    // Don't modify relative paths or API routes
+    if (imgSrc.startsWith('/')) {
+      return imgSrc;
+    }
+    
     return sanitizeYouTubeUrl(imgSrc);
   }, [imgSrc, isValidUrl, sanitizeYouTubeUrl, fallbackSrc]);
 
