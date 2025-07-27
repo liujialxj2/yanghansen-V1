@@ -1,52 +1,45 @@
+'use client'
+
+import React from 'react'
 import Image from 'next/image'
 
-interface NewsImageProps {
+interface NewsImageSimpleProps {
   src: string
   alt: string
-  fill?: boolean
   className?: string
-  priority?: boolean
   width?: number
   height?: number
 }
 
-/**
- * Simplified news image component for server-side rendering
- */
-export default function NewsImageSimple({ 
+export function NewsImageSimple({ 
   src, 
   alt, 
-  fill, 
-  className = "object-cover", 
-  priority, 
-  width = 800, 
-  height = 600 
-}: NewsImageProps) {
-  // 提供一个默认的备用图片
-  const fallbackSrc = 'https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
-  
-  // 检查URL是否有效
-  const isValidUrl = (url: string) => {
-    try {
-      new URL(url)
-      return url.startsWith('http')
-    } catch {
-      return false
-    }
+  className = '',
+  width = 400,
+  height = 200
+}: NewsImageSimpleProps) {
+  const [imageError, setImageError] = React.useState(false)
+
+  if (imageError || !src) {
+    return (
+      <div 
+        className={`bg-gray-200 flex items-center justify-center ${className}`}
+        style={{ width, height }}
+      >
+        <span className="text-gray-500 text-sm">No Image</span>
+      </div>
+    )
   }
 
-  const imageSrc = isValidUrl(src) ? src : fallbackSrc
-
-  const imageProps = {
-    src: imageSrc,
-    alt,
-    className,
-    priority,
-    ...(fill ? { 
-      fill: true, 
-      sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-    } : { width, height })
-  }
-
-  return <Image {...imageProps} />
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className={className}
+      onError={() => setImageError(true)}
+      unoptimized
+    />
+  )
 }
