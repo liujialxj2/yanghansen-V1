@@ -1,55 +1,102 @@
 #!/usr/bin/env node
 
 /**
- * 验证 ads.txt 文件是否正确配置
+ * 验证 Google AdSense 配置是否正确
+ * 包括 ads.txt 文件和 meta 标签
  */
 
 const fs = require('fs')
 const path = require('path')
 
 const ADS_TXT_PATH = path.join(__dirname, '../public/ads.txt')
-const EXPECTED_CONTENT = 'google.com, pub-1093223025550160, DIRECT, f08c47fec0942fa0'
+const LAYOUT_PATH = path.join(__dirname, '../app/layout.tsx')
+const EXPECTED_ADS_TXT = 'google.com, pub-1093223025550160, DIRECT, f08c47fec0942fa0'
+const EXPECTED_META_TAG = '<meta name="google-adsense-account" content="ca-pub-1093223025550160" />'
 
-console.log('🔍 验证 ads.txt 文件...\n')
+console.log('🔍 验证 Google AdSense 配置...\n')
+
+let hasErrors = false
+let layoutContent = ''
 
 try {
-  // 检查文件是否存在
+  // 1. 验证 ads.txt 文件
+  console.log('📄 检查 ads.txt 文件...')
+  
   if (!fs.existsSync(ADS_TXT_PATH)) {
     console.error('❌ ads.txt 文件不存在！')
     console.log('📍 预期位置:', ADS_TXT_PATH)
-    process.exit(1)
+    hasErrors = true
+  } else {
+    const adsContent = fs.readFileSync(ADS_TXT_PATH, 'utf8').trim()
+    
+    if (adsContent === EXPECTED_ADS_TXT) {
+      console.log('✅ ads.txt 文件配置正确！')
+      console.log(`   内容: "${adsContent}"`)
+    } else {
+      console.error('❌ ads.txt 文件内容不正确！')
+      console.log('📋 预期内容:', EXPECTED_ADS_TXT)
+      console.log('📋 实际内容:', adsContent)
+      hasErrors = true
+    }
   }
 
-  // 读取文件内容
-  const content = fs.readFileSync(ADS_TXT_PATH, 'utf8').trim()
-  
-  console.log('📄 ads.txt 文件内容:')
-  console.log(`"${content}"`)
   console.log()
 
-  // 验证内容是否正确
-  if (content === EXPECTED_CONTENT) {
-    console.log('✅ ads.txt 文件配置正确！')
-    console.log()
-    console.log('🌐 部署后可通过以下URL访问:')
-    console.log('- https://yanghansen.blog/ads.txt')
-    console.log('- https://yang-hansen.vercel.app/ads.txt')
-    console.log()
-    console.log('📝 文件内容解析:')
-    console.log('- google.com: 广告系统域名')
-    console.log('- pub-1093223025550160: 你的AdSense发布商ID')
-    console.log('- DIRECT: 直接关系')
-    console.log('- f08c47fec0942fa0: Google认证ID')
+  // 2. 验证 layout.tsx 中的 meta 标签
+  console.log('🏷️ 检查 AdSense meta 标签...')
+  
+  if (!fs.existsSync(LAYOUT_PATH)) {
+    console.error('❌ layout.tsx 文件不存在！')
+    console.log('📍 预期位置:', LAYOUT_PATH)
+    hasErrors = true
   } else {
-    console.error('❌ ads.txt 文件内容不正确！')
-    console.log('📋 预期内容:', EXPECTED_CONTENT)
-    console.log('📋 实际内容:', content)
-    process.exit(1)
+    layoutContent = fs.readFileSync(LAYOUT_PATH, 'utf8')
+    
+    if (layoutContent.includes('name="google-adsense-account"') && 
+        layoutContent.includes('content="ca-pub-1093223025550160"')) {
+      console.log('✅ AdSense meta 标签配置正确！')
+      console.log('   标签: <meta name="google-adsense-account" content="ca-pub-1093223025550160" />')
+    } else {
+      console.error('❌ layout.tsx 中缺少 AdSense meta 标签！')
+      console.log('📋 预期标签:', EXPECTED_META_TAG)
+      hasErrors = true
+    }
+  }
+
+  console.log()
+
+  // 3. 验证 AdSense 脚本
+  console.log('📜 检查 AdSense 脚本...')
+  
+  if (layoutContent && layoutContent.includes('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')) {
+    console.log('✅ AdSense 脚本配置正确！')
+    console.log('   脚本: adsbygoogle.js')
+  } else {
+    console.error('❌ layout.tsx 中缺少 AdSense 脚本！')
+    hasErrors = true
   }
 
 } catch (error) {
   console.error('❌ 验证过程中出错:', error.message)
-  process.exit(1)
+  hasErrors = true
 }
 
-console.log('\n🎉 ads.txt 验证完成！')
+console.log()
+
+if (hasErrors) {
+  console.error('❌ AdSense 配置验证失败！请修复上述问题。')
+  process.exit(1)
+} else {
+  console.log('🎉 Google AdSense 配置验证完成！')
+  console.log()
+  console.log('📋 配置摘要:')
+  console.log('✅ ads.txt 文件已正确配置')
+  console.log('✅ AdSense meta 标签已添加')
+  console.log('✅ AdSense 脚本已加载')
+  console.log()
+  console.log('🌐 部署后访问地址:')
+  console.log('- https://yanghansen.blog/ads.txt')
+  console.log('- https://yang-hansen.vercel.app/ads.txt')
+  console.log()
+  console.log('🚀 现在可以等待 Google AdSense 审核通过！')
+}
