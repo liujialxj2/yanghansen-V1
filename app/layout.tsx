@@ -6,15 +6,23 @@ import { Footer } from '@/components/Footer'
 import { LocaleProvider } from '@/components/LocaleProvider'
 import { ChineseDetector } from '@/components/ChineseDetector'
 import { detectLocale } from '@/lib/locale'
+import { StructuredData } from './structured-data'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://yanghansen.blog'),
-  title: 'Yang Hansen | NBA Portland Trail Blazers',
-  description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star',
-  keywords: 'Yang Hansen, NBA, Trail Blazers, Chinese Basketball, Center',
+  title: {
+    default: 'Yang Hansen | NBA Portland Trail Blazers',
+    template: '%s | Yang Hansen Official'
+  },
+  description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star. Latest news, stats, videos and career highlights.',
+  keywords: 'Yang Hansen, 杨瀚森, NBA, Portland Trail Blazers, Chinese Basketball, Center, CBA, Basketball Player, NBA Draft 2025',
   authors: [{ name: 'Yang Hansen Official Team' }],
+  creator: 'Yang Hansen Official Team',
+  publisher: 'Yang Hansen Official',
+  category: 'Sports',
+  classification: 'Basketball Player Official Website',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
@@ -22,19 +30,48 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Yang Hansen | NBA Portland Trail Blazers',
-    description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star',
+    description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star. Latest news, stats, videos and career highlights.',
     type: 'website',
-    locale: 'zh_CN',
-    alternateLocale: 'en_US',
+    locale: 'en_US',
+    alternateLocale: 'zh_CN',
+    url: 'https://yanghansen.blog',
+    siteName: 'Yang Hansen Official',
+    images: [
+      {
+        url: '/favicon.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Yang Hansen - NBA Portland Trail Blazers',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Yang Hansen | NBA Portland Trail Blazers',
     description: 'Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star',
+    creator: '@YangHansenNBA',
+    images: ['/favicon.svg'],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'google-site-verification-code-here',
+  },
+  alternates: {
+    canonical: 'https://yanghansen.blog',
+    languages: {
+      'en-US': 'https://yanghansen.blog',
+      'zh-CN': 'https://yanghansen.blog',
+    },
   },
 }
 
@@ -58,6 +95,7 @@ export default async function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1093223025550160"
           crossOrigin="anonymous"
         />
+        <StructuredData />
       </head>
       <body className={inter.className}>
         <LocaleProvider messages={messages} locale="en">

@@ -1,0 +1,37 @@
+# Yang Hansen Official Website - NBA Portland Trail Blazers
+# This is NOT a parking page - this is the official website of Yang Hansen
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yanghansen.blog/sitemap.xml
+
+# Specific crawling instructions for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Specific crawling instructions for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Disallow admin and private areas
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /.git/
+
+# Explicitly allow important pages for indexing
+Allow: /
+Allow: /about/
+Allow: /news/
+Allow: /videos/
+Allow: /stats/
+Allow: /privacy/
+Allow: /terms/
+
+# Website information
+# Title: Yang Hansen | NBA Portland Trail Blazers
+# Description: Yang Hansen Official Website - Portland Trail Blazers Center, Rising Chinese NBA Star
